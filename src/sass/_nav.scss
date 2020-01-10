@@ -1,0 +1,76 @@
+nav {
+    width: 100%;
+    height: $navheight;
+    display: flex;
+    // background-color: green;
+    .navBox{
+        width: $innerwidth;
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        .goodsclass {
+            display: flex;
+            align-items: center;
+            // flex-direction: column;
+            height:100%;
+            width: 163px;
+            padding-left: 27px;
+            background-color: $commoncolor;
+            p{
+                width: 12px;
+                height: 12px;
+                margin-left: -18px;
+                background: url(../../src/images/indexSprit.png) no-repeat 0 0;
+            }
+            span {
+                font-size: 12px;
+                color: white;
+                font-weight: bold;
+                margin-left: 16px;
+            }
+            }
+        #nav {
+            height:100%;
+            width: 785px;
+            // background-color: pink;
+            padding-left: 10px;
+            // line-height: $navheight;
+            ul {
+                display: flex;
+                li {
+                    line-height: $navheight;
+                    padding: 0 12px 0 13px;
+                    font-size: 15px;
+                    line-height: $navheight;
+                    font-weight: bold;
+                    position: relative;
+                    span {
+                        width: 25px;
+                        height: 8px;
+                        position: absolute;
+                        left: 50%;
+                        top: 38px;
+                        transform: translate(-50%,0);
+                        background: url(../../src/images/indexSprit.png) no-repeat -37px 0;
+                    }
+                    a {
+                        color: #333;
+                    }
+                    &:hover span {
+                        top: 30px;
+                        transition: all 0.5s;
+                    }
+                }
+            }
+        }
+        .publicity {
+            position: absolute;
+            right: 0;
+            top: 0;
+            img {
+                width: 170px;
+                height: $navheight;
+                }
+            }
+        }
+    }

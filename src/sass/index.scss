@@ -2,6 +2,12 @@
 @import 'compass/reset';
 @import 'compass/css3';
 
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
 %clearfix {
     &:after {
         content: '.';
@@ -11,10 +17,10 @@
         clear: both;
     }
 }
-$wrapwidth:1425px;
+// $wrapwidth:1425px;
 $innerwidth:1190px;
 $commoncolor:#f90;
-$positionleft:($wrapwidth - $innerwidth)/2;
+// $positionleft:($wrapwidth - $innerwidth)/2;
 $navheight:38px;
 $mainheight1:565px;
 $mainheight2:455px;
@@ -25,51 +31,5 @@ $mainheight2:455px;
     top: $top;
 }
 
-#header {
-    width: $wrapwidth;
-    #login{
-        height: 36px;
-        background-color: #f5f5f5;
-    }
-    #search{
-        height: 110px;
-        background-color: red;
-    }
-}
-
-nav {
-    position: relative;
-    width: $wrapwidth;
-    background-color: green;
-    .goodsclass {
-        height: $navheight;
-        width: 163px;
-        padding-left: 27px;
-        background-color: $commoncolor;
-        @include positionA($positionleft,0);
-        // position: absolute;
-        // left:$positionleft;
-        // top:0;
-        }
-    #nav {
-        height: $navheight;
-        width: 785px;
-        background-color: pink;
-        // position: absolute;
-        // left: $positionleft + 190px;
-        // top:0;
-        @include positionA($positionleft + 190px, 0);
-        padding-left: 10px;
-        line-height: $navheight;
-    }
-    .publicity {
-        position: absolute;
-        right: $positionleft;
-        top: 0;
-        img {
-            width: 170px;
-            height: $navheight;
-            }
-        }
-    }
-
+@import "header";
+@import "nav";
