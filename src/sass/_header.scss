@@ -20,6 +20,7 @@
     }
     #login{
         width: 100%;
+        box-sizing: border-box;
         height: 35px;
         font-size: 12px;
         background-color: #f5f5f5;
@@ -128,7 +129,7 @@
                 position: relative;
                 .iconfont {
                     text-align: right;
-                    font-size: 20px;
+                    font-size: 10px;
                     width: 25px;
                     height: 36px;
                     line-height: 36px;
