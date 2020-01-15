@@ -1,0 +1,324 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-cn">
+
+<head>
+    <title>购物车</title>
+    <!-- <link rel="dns-prefetch" href="http://res.suning.cn"> -->
+    <link rel="stylesheet" type="text/css" href="../dist/stylesheets/cartlist.css">
+    <!-- 引入公用头 -->
+
+    <meta charset="UTF-8">
+    <meta name="keywords" content="苏宁易购">
+    <meta name="description" content="苏宁易购是国内领先的综合购物商城">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="cache-control" content="no-store">
+    <meta http-equiv="cache-control" content="max-age=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="expires" content="2020-01-13 20:44:49">
+
+    <!-- 引入全站公用资源文件 -->
+
+
+    <!-- <link rel="shortcut icon" href="http://www.suning.com/favicon.ico" type="image/x-icon"> -->
+
+    <link rel="stylesheet" href="http://res.suning.cn/public/v3/css/??v3common.min.css,search.min.css,sn-sidebar.min.css?v=2019121601">
+
+    <meta content="true" name="autoclick">
+    <meta content="d488778a" name="siteid">
+    <link rel="stylesheet" type="text/css" href="http://res.suning.cn/project/ccf/css/??/cart-base.css,/cart-1.css,/Snaddress.css?v=2020010701">
+    <meta content="40134" name="pageid">
+</head>
+
+<body>
+
+    <!-- 此处引入cart1页头  -->
+    <div id="cart-one-header" class="cart-header" sap-modid="91C3">
+        <div class="wrapper clearfix">
+            <div class="cart-top-pic">
+                <a name="icart1_top_row_wind" href="#" title="喜临门大牌抢购" target="_blank" sap-expo="true"><img src="//image.suning.cn/uimg/aps/material/155904346710465225.jpg" alt="喜临门大牌抢购"></a>
+            </div>
+            <div class="g-logo" id="cart-g-logo">
+                <a href="#" name="icart1_shopping_logo" sap-expo="true"><img src="//res.suning.cn/public/images/logo/snlogo.png?v=2020010701" alt="苏宁易购"></a>
+            </div>
+            <!-- 购物车头部搜索框 start -->
+            <div class="cart-search">
+                <div class="cart-search-box">
+                    <i class="search-icon"></i>
+                    <input type="text" class="cart-search-input" name="search_input_box">
+                </div>
+                <a href="javascript:void(0);" class="cart-search-btn" name="search_go" target="">搜索</a>
+                <!--[[ 搜索列表 start -->
+                <div class="cart-search-list">
+                    <ul>
+                    </ul>
+                </div>
+                <!--[[ 搜索列表 end   -->
+            </div>
+            <!-- 购物车头部搜索框 end   -->
+        </div>
+
+        <div class="effective-tips hide effective-tip-cart1" id="cartOneTopNotificationBar">
+            <span class="cart1_title_tips">
+                <i class="cart1-tip-icon"><img src=""></i>
+                <a target="_blank" name="icart1_dbtz_dj"></a>
+            </span>
+            <a href="javascript:void(0);" class="tips-close" name="icart1_dbtz_gb"></a>
+        </div>
+
+        <div id="cart-one-delivery" class="head-delivery wrapper clearfix">
+            <div class="city-select">
+                <span class="delivery-desc fl c6">送货至</span>
+                <div id="city" class="fl" name="icart1_switchAddress">
+                    <div class="ui-city"><a name="item_none_dizhi_01" href="#" class="ui-city-toggle" hidefocus="true"><em class="address-placement"><span id="provinceName" class="pr dn hide" role="10,,,北京">北京</span><span class="ct" id="citybName" role="1000000,9017,01,北京">北京</span><span id="districtName" class="ds" role=",10106,01,东城区">东城区</span><span id="streetName" class="st" role=",0100100,00,全境">全境</span></em><b class="arr"></b></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart-bg" id="cart-bg">
+        <div class="wrapper cart cart-wrapper" id="cart-wrapper">
+            <!--此处引入车一包装页面 -->
+            <!--此处引入购物车未登录标题及提示语 -->
+
+
+            <div class="m-cart-header">
+                <div class="cart-table-header">
+                    <div class="inner-box c6">
+                        <div class="th th-chk form th-chk-chkd">
+                            <div class="cart-checkbox">
+                                <input type="checkbox" id="chooseAllCheckBox" class="J-AllCheckBox" name="icart1_goods_all01">
+                                <label for="chooseAllCheckBox"></label>
+                            </div>
+                            全选
+                        </div>
+                        <div class="th th-item">商品信息</div>
+                        <div class="th th-specs">规格</div>
+                        <div class="th th-price">单价（元）</div>
+                        <div class="th th-amount">数量</div>
+                        <div class="th th-sum">小计（元）</div>
+                        <div class="th th-op">操作</div>
+                    </div>
+                </div>
+            </div>
+            <div class="m-cart-body" id="cart-body" sap-modid="Jyd6">
+
+                <div class="promo-location promo-flag hide">
+                    <a href="javascript:void(0);" class="promo-bg" name="icart1_yhxxxfc_dj">
+                        <span>找优惠</span>
+                        <i class="arr"></i>
+                        <i class="look-for"></i>
+                    </a>
+                    <a href="javascript:void(0);" name="icart1_yhxxxfc_dj" class="promo-bg-left hide">
+                        <span>购物车中有0件商品，点击查看</span>
+                        <i class="close" name="icart1_yhxxxfc_gb">×</i>
+                    </a>
+                </div>
+
+                <div id="store-0070586477" class="m-store" storeid="0070586477" storefee="0.00" storename="东闽茶叶专营店" storetype="">
+                    <!-- 此处引入C店铺头 [[-->
+                    <div class="store-title clearfix">
+                        <div class="cart-checkbox">
+                            <input type="checkbox" class="l checkbox chk-cstore-all" checktype="storeAllCheck" id="J_CheckBox_0070586477" data-id="store-0070586477" name="icart1_buy_shangjia">
+                            <label for="J_CheckBox_0070586477"></label>
+                        </div>
+                        <b class="l mr10">
+                <a sa-data="{'eletp':'shop','shopid':'0070586477'}" href="#" class="c-name" target="_blank" name="icart1_name_cd" sap-expo="true">东闽茶叶专营店</a>
+                </b>
+                        <a title="点此可以直接和卖家交流选好的产品，或相互交流网购体验。" href="javascript:;" onclick="javascript:findpassSupplier('0070586477','','','');" class="tm l tm1" name="icart1_buy_ask"></a><a class="coupon-bg ml5 fl" data-placement="bottom" data-node="#coupon-0070586477" name="icart1_tickets_c_center">优惠券<i class="arr"></i></a>
+                        <div id="coupon-0070586477" class="hide">
+                            <div class="0070586477_div" style="width:490px;padding:10px;"></div>
+                        </div>
+                        <div class="ship-desc fr ">
+                            <p class="save-ship fl mr20">运费：<span class="sn-price" id="meetCut0070586477" data-placement="bottom"><i>¥</i><em>0.00</em></span></p>
+                            <div id="meet-cut-0070586477" class="hide">
+                                <div class="fare-merge-order">
+                                    <div onclick="st.tooltipNew.allHide();" class="ui-tooltip-close">×</div>
+                                    <div class="fare-tab clearfix">
+                                        <ul>
+                                        </ul>
+                                    </div>
+                                    <div class="content-box clearfix">
+                                        <div class="fare-content">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 此处引入C店铺头 ]]-->
+                    <div class="cart-list">
+                        <div data-sku="a" class="item          item-last">
+                            <span class="line-this"></span>
+                            <span class="main-line"></span>
+                            <span class="main-line main-line-11"></span>
+                            <div class="item-main  clearfix">
+                                <input class="haoye" disprice="" type="hidden" cmmdtycode="000000011630962308" cmmdtyqty="1" shopcode="0070586477" itemno="110090073141575065645367" activitytype="01" subactivitytype="" pricetype="" overseasflag="" salesprice="99.00" tickstatus="0" itemoverdue="0"
+                                    carshopserway="" carshopcode="" suppliercode="0070586477" jdlmodel="" coldchainflag="" tmflag="" swlflag="0">
+                                <div class="td td-chk form">
+                                    <div class="cart-checkbox">
+                                        <input name="icart1_goods_sel" type="checkbox" id="110090073141575065645367" disprice="" activitytype="01" subactivitytype="" pricetype="" cmmdtycode="000000011630962308" overseasflag="" salesprice="99.00" shopcode="0070586477" cmmdtyname="福岗铁观音茶叶浓香型2019新茶兰花香安溪乌龙茶小包装散装礼盒装500g"
+                                            cmmdtyqty="1" suppliercode="0070586477" jdlmodel="" swlflag="0" coldchainflag="" tmflag="" class="checkbox chk-item">
+                                        <label for="110090073141575065645367"></label>
+                                    </div>
+                                </div>
+                                <div class="td td-item">
+                                    <div class="item-pic">
+                                        <a href="#" class="item-img-box tax-introduce tip-common-hover-fn-btn" data-placement="same" data-node="#tax-tip-person110090073141575065645367" target="_blank" name="icart1_goods_pic" sap-expo="true">
+                                            <img class="pcsslabel-img-2" src="//image.suning.cn/uimg/pcms/label05/123672056913155548788900_05.png"><img src="//imgservice.suning.cn/uimg1/b2c/image/ZqzZlvuNfZD_H7eaPiDPCw.jpg_100w_100h_4e" alt="福岗铁观音茶叶浓香型2019新茶兰花香安溪乌龙茶小包装散装礼盒装500g">
+
+
+
+                                        </a>
+                                        <div class="hide" id="tax-tip-person110090073141575065645367">
+                                            <div class="tax-tip">
+                                                <img class="pcsslabel-img-2" src="//image.suning.cn/uimg/pcms/label05/123672056913155548788900_05.png"><img src="//imgservice.suning.cn/uimg1/b2c/image/ZqzZlvuNfZD_H7eaPiDPCw.jpg_260w_260h_4e" alt="福岗铁观音茶叶浓香型2019新茶兰花香安溪乌龙茶小包装散装礼盒装500g">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-info">
+                                        <a href="#" target="_blank" class="item-title" name="icart1_goods_name" cmmdtycode="000000011630962308" cmmdtyname="福岗铁观音茶叶浓香型2019新茶兰花香安溪乌龙茶小包装散装礼盒装500g">
+                                         
+                                         福岗铁观音茶叶浓香型2019新茶兰花香安溪乌龙茶小包装散装礼盒装500g</a>
+                                    </div>
+                                    <div class="item-service">
+
+                                    </div>
+                                    <div class="item-remark" id="shoppingGold_110090073141575065645367">
+
+                                    </div>
+                                </div>
+                                <div class="td td-specs">
+                                </div>
+                                <div class="td td-price">
+
+                                    <div class="price-line">
+                                        <span class="price-now sn-price">
+                                        <i>¥</i><em>99.00</em>
+                                </span>
+                                    </div>
+
+
+                                    <!-- 02-付费会员 2017-08-23 / 04-大促报名会员价 2018-06-25-->
+                                </div>
+                                <div class="td td-amount">
+                                    <div class="item-amount">
+                                        <a href="javascript:;" class="minus no-minus" name="icart1_goods_numd">-</a>
+                                        <input type="text" name="icart1_goods_num_sr" class="ui-text text-amount" autocomplete="off" data-max="99" data-min="1" limitqtytype="1" itemno="110090073141575065645367" activitytype="01" value="1" id="110090073141575065645367-text-amount" maxlength="2">
+
+                                        <a href="javascript:;" class="plus" name="icart1_goods_numi">+</a>
+                                    </div>
+                                </div>
+                                <div class="td td-sum">
+                                    <b class="sn-price">
+                                    <i>¥</i><em>99.00</em>
+    
+                            </b>
+                                </div>
+                                <div class="td td-op" id="0000000116309623080070586477" itemno="110090073141575065645367" shopcode="0070586477" cmmdtyname="福岗铁观音茶叶浓香型2019新茶兰花香安溪乌龙茶小包装散装礼盒装500g" cmmdtycode="000000011630962308" isoverdue="0" activitytype="01" subactivitytype="" activityid=""
+                                    carshopserway="" carshopcode="" suppliercode="0070586477" jdlmodel="" overseasflag="" o2oserviceflag="" servicestorecode="" servicestorename="">
+                                    <a sa-data="{'eletp':'collect','prdid':'0070586477','shopid':'000000011630962308'}" href="javascript:;" class="add-fav tip-common-click-fn-btn" data-tip-type="addFav" name="icart1_goods_col" data-placement="bottom" sap-expo="true">移入关注</a>
+                                    <a href="javascript:;" class="del tip-common-click-fn-btn" data-placement="bottom" data-tip-type="delOne" name="icart1_goods_delate">删除</a>
+                                    <p href="javascript:;" class="tip-look-alike" data-placement="bottom" id="alike-110090073141575065645367" data-clonenode="#alikePro-110090073141575065645367">查找相似<i class="alike-arr"></i></p>
+                                    <div id="alikePro-110090073141575065645367" class="hide">
+                                        <div class="alike-container">
+                                            <div class="alike-prolist J-alike-pro">
+                                                <a class="prev" href="javascript:void(0);"></a>
+                                                <a class="next" href="javascript:void(0);"></a>
+                                                <div class="list-container">
+                                                    <ul class="list-box">
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <input type="hidden" id="loginSign" value="true">
+                <input type="hidden" id="withGifts" value="0">
+
+            </div>
+
+            <div class="cart-toolbar-box" sap-modid="SHmD">
+                <input type="hidden" id="overSeaTaxFare" value="0.00">
+                <div class="cart-toolbar rel clearfix cart-toolbar-fix">
+                    <div class="toolbar-box clearfix">
+                        <i class="had-buy-arr"></i>
+                        <div class="l-column l form rel" id="cart-toolbar-opt">
+                            <div class="cart-checkbox">
+                                <input name="icart1_ope_all" type="checkbox" id="chooseAllCheckBox2" class="J-AllCheckBox">
+                                <label for="chooseAllCheckBox2" class="mr10 clearfix"><i class="icon l"></i><span class="l">全选</span></label>
+                            </div>
+                            <a href="javascript:;" class="del-selected ml20 tip-common-click-fn-btn" data-placement="top" data-tip-type="delSelect" data-wrapper=".l-column" name="icart1_jsl_scxzsp_click">删除选中商品</a>
+                            <a href="javascript:;" class="del-fail ml20 tip-common-click-fn-btn" data-placement="top" data-tip-type="delFail" data-wrapper=".l-column" name="icart1_jsl_scsxsp_click" style="display: none;">删除失效商品</a>
+                        </div>
+                        <div class="r-column r  clearfix">
+                            <div class="cart-collect fl">
+                                <!-- 1115 dom结构变化  -->
+                                <!-- 总价 -->
+                                <div class="cart-total-price clearfix">
+                                    <div class="split"></div>
+                                    <div class="sn-sum-price rel">
+                                        <p class="cart-sum-price"><span id="totalName">总价（含运费）：</span><b class="sn-price price-color"><i>¥</i><em id="cart1PayAmount">0.00</em></b></p>
+                                        <p class="cart-extra-price hide">
+                                            <span>运费<em class="plus">+</em>税费<span>（以结算页为准）</span>：</span>
+                                            <span class="sn-price"><i>¥</i><em>0.00</em></span>
+                                            <em class="plus">+</em>
+                                            <span class="sn-price"><i>¥</i><em>0.00</em></span>
+                                        </p>
+                                        <p class="cart-extra-price">
+                                            运费（以结算页为准）：<span class="sn-price"><i>¥</i><em>0.00</em></span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- 已选优惠模块 -->
+                                <div class="save-ship">
+                                    <!-- 已选商品 为您节省-->
+                                    <div class="selected-prods clearfix">
+                                        <!-- 为您节省-->
+                                        <p class="cart-sub-total fr mr20">已享满减：<span class="sn-price"><i>-¥</i><em>0.00</em></span></p>
+                                        <div class="alchose rel">
+                                            <a name="icart1_yxsp_change_cancel" href="javascript:void(0);" class="now-select-goods" data-placement="top" data-node="#selected-pro" data-tip-force="1" data-wrapper=".alchose">已选商品 <b class="c-f70 ff-tahoma price-color">0</b>件<span class="alchose-span alchose-up"></span></a>
+                                            <div id="selected-pro" class="hide">
+                                                <div class="had-buy">
+                                                    <div class="ui-had-buy J-selected-pro">
+                                                        <a class="prev" href="javascript:void(0);"></a>
+                                                        <a class="next" href="javascript:void(0);"></a>
+                                                        <div class="list-container">
+                                                            <ul class="list-box">
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--  车一自动用券  919 -->
+                                    <div class="coupon-autouse rel hide">
+                                        <span class="front">
+                                    （</span>
+                                        <a href="javascript:void(0);" class="now-select-coupon" data-placement="top" data-node="#autouse" data-wrapper=".coupon-autouse">
+                                            <span class="mr5 c-f60 discount-detail hide" title="" id="bestNum_auto"></span>
+                                            <span class="sn-price hide" title="" id="coupTotal_auto">-<i>¥</i><em></em></span>
+                                            <span class="mr5 hide" id="tipMsg_auto"></span>
+                                            <span class="alchose-span alchose-up"></span>
+                                        </a> <span class="back">)</span>
+                                        <div id="autouse" class="hide"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-checkout l">
+                                <a class="checkout cart-btn checkout-disable-tip" href="javascript:void(0)" name="icart1_ope_buy01" sa-data="{'eleid':'1'}" sap-expo="true"><b></b>去结算</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

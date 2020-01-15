@@ -1,22 +1,14 @@
 @charset 'utf-8';
 @import 'compass/reset';
 @import 'compass/css3';
-
 a {
     text-decoration: none;
 }
+
 li {
     list-style: none;
 }
-%clearfix {
-    &:after {
-        content: '.';
-        display: block;
-        overflow: hidden;
-        visibility: hidden;
-        clear: both;
-    }
-}
+
 // $wrapwidth:1425px;
 $innerwidth:1190px;
 $commoncolor:#f90;
@@ -24,14 +16,20 @@ $commoncolor:#f90;
 $navheight:38px;
 $mainheight1:565px;
 $mainheight2:455px;
-
-@mixin positionA($left:0,$top:0) {
+@mixin positionA($left:0, $top:0) {
     position: absolute;
     left: $left;
     top: $top;
 }
 
+body {
+    background-color: #eee;
+    padding-bottom: 110px;
+}
+
 @import "header";
 @import "nav";
 @import "banner";
-@import "nianhuo"
+@import "nianhuo";
+@import "main";
+@import "recommend"

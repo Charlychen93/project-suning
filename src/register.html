@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)https://reg.suning.com/person.do -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>注册界面</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="keywords" content="苏宁易购">
+    <meta name="description" content="苏宁易购是领先的综合网上购物商城, 在线特价销售家电、通讯数码、电脑、家居百货、服装服饰、母婴、图书、食品、保险、旅行、充值、团购等数万类商品和服务。正品行货, 全国联保, 本地配送, 货到付款。省钱放心上苏宁电器网上商城, 尽享购物乐趣！">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <meta name="autoclick" content="true">
+    <meta name="siteid" content="d488778a">
+    <meta name="pageid" content="uzD">
+    <link rel="shortcut icon" href="https://www.suning.com/favicon.ico" type="image/x-icon">
+    <!-- 引入全站公用资源文件 -->
+    <link rel="shortcut icon" href="https://www.suning.com/favicon.ico" type="image/x-icon">
+
+    <meta content="true" name="autoclick">
+    <meta content="d488778a" name="siteid">
+
+    <!-- 引入项目资源文件 -->
+    <link rel="stylesheet" type="text/css" href="../dist/stylesheets/register.css">
+
+    <!--[if lt IE 7 ]><body class="ie ie6"><![endif]-->
+    <!--[if IE 7 ]><body class="ie ie7"><![endif]-->
+    <!--[if IE 8 ]><body class="ie ie8"><![endif]-->
+    <!--[if IE 9 ]><body class="ie9"><![endif]-->
+    <!--[if (gt IE 9)|!(IE)]><!-->
+    <!--<![endif]-->
+    <div class="header clearfix" sap-modid="RZ7FT">
+        <a href="javascript:logonUrl(&#39;&#39;,&#39;&#39;,&#39;&#39;);" class="login" name="Preg_index_none_log">我已经注册，马上登录&gt;</a>
+        <a href="https://www.suning.com/" class="logo"></a>
+        <div class="logo-txt">欢迎注册</div>
+    </div>
+    <input type="hidden" id="pagename" value="pgcate=10009;pgtitle=个人会员注册页">
+    <div class="main">
+        <form id="grapReg_form" action="https://reg.suning.com/identification.do" method="post" autocomplete="off">
+            <input type="hidden" id="token2" name="token" value="a1d4b93f-f0b6-40f9-b35e-f9108448e06e">
+            <input type="hidden" id="regPage2" name="regPage" value="NORMAL_REG_PAGE">
+            <input type="hidden" id="alias" name="aliasName" maxlength="11">
+            <input type="hidden" id="random" name="random">
+            <input type="hidden" id="uid" name="uid">
+            <input type="hidden" id="iCode" name="iCode" value="">
+        </form>
+        <form id="enterReg_form" action="https://reg.suning.com/b2cMinosRegister.do" method="post" autocomplete="off">
+            <div class="reg-form" sap-modid="RZ7FT">
+                <div class="gift-pkg"><i></i>注册领<em>199</em>元大礼包</div>
+                <div class="phone-field">
+                    <div class="input-box clearfix">
+                        <label class="title">手机号码</label>
+                        <div class="input-wrapper">
+                            <input type="text" id="mobileAlias" name="aliasName" maxlength="11">
+                            <input type="hidden" id="mobileAliasRSA" name="aliasNameRSA">
+                            <label class="placeholder" style="display: block;">请输入手机号</label>
+                            <i class="ok" style="display: none;"></i>
+                        </div>
+                    </div>
+                    <div id="aliasTip" class="error-msg hide" style="display: block;">请输入注册手机！</div>
+                </div>
+
+                <div class="siller-field hide" id="sillerDiv">
+                    <div id="siller"></div>
+                    <input type="hidden" id="sillerCode" name="sillerCode" value="">
+                </div>
+                <div class="error-msg hide" id="sillerCodeTip"></div>
+
+                <div class="img-field hide" id="imgCodeDiv">
+                    <div class="input-box clearfix">
+                        <label class="title">图形验证码</label>
+                        <div class="input-wrapper">
+                            <input type="text" id="imgCode" name="imgCode" maxlength="4">
+                            <label class="placeholder">验证码</label>
+                            <i class="ok" style="display: inline;"></i>
+                        </div>
+                        <img id="imgSrc" src="https://reg.suning.com/person.do" alt="" class="verify-code" name="Preg_index_none_pic">
+                        <a id="changeImgSrc" href="javascript:void(0)" class="change-verify" name="Preg_index_none_change">换一张</a>
+                    </div>
+                    <div class="error-msg hide" id="imgCodeTip" style="display: none;"></div>
+                </div>
+
+                <div class="msg-field">
+                    <div class="input-box clearfix">
+                        <label class="title">手机验证码</label>
+                        <div class="input-wrapper">
+                            <input type="text" id="smsCode" name="mobileCode" maxlength="4">
+                            <label class="placeholder" style="display: block;">请输入手机验证码</label>
+                            <i class="ok" style="display: none;"></i>
+                        </div>
+                        <a id="sendSmsCode" href="javascript:void(0)" class="send-msg" name="Preg_index_none_getmobile">获取短信验证码</a>
+                    </div>
+                    <div class="send-success">
+                        <div id="smsCodeTip" class="error-msg hide" style="height: 34px; line-height: 34px; margin-top: 0px; overflow: hidden; display: none;"></div>
+                        <div class="msg-sent hide">手机验证码已经成功发送，<em>8</em>小时内有效</div>
+                    </div>
+                </div>
+                <div class="password-field">
+                    <div class="input-box clearfix" style="margin-bottom:0;">
+                        <label class="title">设置密码</label>
+                        <div class="input-wrapper">
+                            <input type="password" id="setPsw" name="setPsw" maxlength="20" class="encrypt" form="rsanew">
+                            <input type="hidden" id="setPswRSA" name="setPswRSA">
+                            <i class="eye eye-plain"></i>
+                            <input type="text" id="setPswPlain" name="setPswPlain" maxlength="20" class="plain" form="rsanew">
+                            <i class="eye eye-encrypt"></i>
+                            <i class="ok" style="display: none;"></i>
+                            <label class="placeholder" style="display: block;">请输入密码</label>
+                        </div>
+                    </div>
+                    <div style="height:50px;">
+                        <div id="setPswTip" class="error-msg hide" style="margin: 0px; display: none;"></div>
+                        <div class="suggestion hide" style="display: none;"><em>6-20个字符，由字母，数字和符号的两种以上组合。</em><a id="pswSuggestion" href="javascript:void(0)">密码设置建议</a></div>
+                        <div id="setPsw_rank" class="security-level clearfix hide">
+                            <span>安全程度：</span>
+                            <span class="level level1">低</span>
+                            <span class="level level2">中</span>
+                            <span class="level level3">高</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="items" style="display:none">
+                    <input type="checkbox" id="protocol" checked="checked" class="accept-items" name="Preg_index_none_check">
+                    <a href="https://sale.suning.com/all/regProtocol/snyghyzc.html" target="_blank" name="Preg_index_none_hyzc">《苏宁会员章程》</a>
+                    <a href="https://sale.suning.com/all/regProtocol/yfbxy.html" target="_blank" name="Preg_index_none_yfb">《易付宝协议》</a>
+                    <a href="https://sale.suning.com/all/regProtocol/yssm.html" target="_blank">《苏宁隐私政策》</a><a href="https://sale.suning.com/all/regProtocol/yfbyszc.html" target="_blank">《易付宝隐私政策》</a> 及
+                    <a href="https://sale.suning.com/all/regProtocol/sngglmzxxy.html" target="_blank" name="Preg_index_none_snlm">《苏宁广告联盟在线协议》</a>
+                </div>
+                <div id="protocolTip" class="pls-accept-items hide" type="hidden">您必须同意苏宁服务条款后，才能提交注册</div>
+                <a href="javascript:void(0)" id="save" onclick="setDfpMmdsValue()" class="submit-btn" name="Preg_index_none_submit">提交注册</a>
+            </div>
+
+            <input type="hidden" id="ticket" name="ticket" value="kO4crKPBRYCLcwReA4s8og4Mszi7iwSOorWlujwW0dqHvEWHvZp+FKSNgDIwYRPKFxGZIfaMK/3AGS5BVmYdrS0XRSQt6SsUzoRSalNhXTnilxqly9nfiWIlzHaUoY7Zt/FGEJ9cBMmuseKW60vFbbE2jfOThy11MBKn28CMrPE=">
+            <input type="hidden" id="riskType" name="riskType" value="isNullVerifyCode">
+
+            <input type="hidden" id="token" name="token" value="a1d4b93f-f0b6-40f9-b35e-f9108448e06e">
+            <input type="hidden" id="regPage" name="regPage" value="NORMAL_REG_PAGE">
+            <input type="hidden" id="myTargetUrl" name="myTargetUrl" value="">
+            <input type="hidden" id="mseqNum" value="-1">
+            <input type="hidden" id="commerceServer" value="https://ssl.suning.com">
+            <input type="hidden" id="custSource" name="custSource" value="">
+            <input type="hidden" id="accountCreatedChannel" name="accountCreatedChannel" value="208000103001">
+            <input type="hidden" id="dfpToken" name="dfpToken" value="">
+            <input type="hidden" id="detect" name="detect" value="">
+            <input type="hidden" id="accessToken" name="accessToken" value="">
+            <input type="hidden" id="sceneId" name="sceneId" value="SRSPC">
+            <input type="hidden" id="appCode" name="appCode" value="01E286717A0E2B926DD55314EC263883">
+            <input type="hidden" id="stepFlag" name="stepFlag" value="08DD83216388DA0A29B5B3CEE0CC0E6F">
+
+        </form>
+    </div>
+    <div class="reg-dialog dialog1" sap-modid="RZ7FT">
+        <div class="mask"></div>
+        <div class="content">
+            <i class="close"></i>
+            <p>该手机已注册易购账号，继续注册原账号将不能使用</p>
+            <a href="javascript:void(0)" id="cangrap-confirm-login" class="btn go-login" name="Preg_index_none_Tlog">直接登录</a><br>
+            <a href="javascript:void(0)" id="cangrap-confirm-continue" class="close" name="Preg_index_none_Treg">放弃原账号</a>
+        </div>
+    </div>
+    <div class="reg-dialog dialog2" sap-modid="RZ7FT">
+        <div class="mask"></div>
+        <div class="content">
+            <i class="close"></i>
+            <p>该手机在易付宝已存在，您可以</p>
+            <a href="javascript:void(0)" id="epp-mobile-confirm-login" class="btn" name="Preg_index_none_Tyifubao" style="width:200px;">使用该易付宝账号联合登录</a>
+        </div>
+    </div>
+    <div class="reg-protocol" style="display: none;">
+        <div class="mask"></div>
+        <div class="content">
+            <div class="head">
+                <span>注册协议</span>
+                <a href="https://www.suning.com/"></a>
+            </div>
+            <div class="body" sap-modid="RZ7FT">
+                <p>
+                    【<b>审慎阅读</b>】您在申请注册流程中点击同意前，应当认真阅读以下协议。<b>请您务必审慎阅读、充分理解协议中相关条款内容，其中包括</b>：<br>
+                    <b>1. 与您约定免除或限制责任的条款；</b><br>
+                    <b>2. 与您约定法律适用和管辖的条款；</b><br>
+                    <b>3. 其他以粗体下划线标识的重要条款。</b>
+                </p>
+                <p style="margin-top:22px;">
+                    如您对协议有任何疑问，可向平台客服咨询。<br> 【
+                    <b>特别提示</b>】当您按照注册页面提示填写信息、阅读并同意协议且完成全部注册程序后，即表示您已充分阅读、理解并接受协议的全部内容。
+                </p>
+                <p style="margin-top:22px;">
+                    <b>阅读协议的过程中，如果您不同意相关协议或其中任何条款约定，您应立即停止注册程序。</b><br>
+                    <a href="https://sale.suning.com/all/regProtocol/snyghyzc.html" target="_blank">《苏宁会员章程》</a><br>
+                    <a href="https://sale.suning.com/all/regProtocol/yfbxy.html" target="_blank">《易付宝协议》</a><br>
+                    <a href="https://sale.suning.com/all/regProtocol/yssm.html" target="_blank">《苏宁隐私政策》</a><br>
+                    <a href="https://sale.suning.com/all/regProtocol/yfbyszc.html" target="_blank">《易付宝隐私政策》</a><br>
+                    <a href="https://sale.suning.com/all/regProtocol/sngglmzxxy.html" target="_blank">《苏宁广告联盟在线协议》</a><br>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- 此处引入公用尾部 -->
+    <div class="clear"></div>
+    </body>
+
+</html>

@@ -41,6 +41,13 @@
       "unicode_decimal": 58936
     },
     {
+      "icon_id": "3546188",
+      "name": "购物车",
+      "font_class": "gouwuche",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
       "icon_id": "3763254",
       "name": "搜索",
       "font_class": "weibiaoti-",

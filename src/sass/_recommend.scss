@@ -1,0 +1,96 @@
+#recoBox {
+    width: $innerwidth;
+    margin: 0 auto;
+    padding-top: 30px;
+    .reco-title {
+        h5 {
+            height: 22px;
+            line-height: 22px;
+            padding-left: 12px;
+            border-left: 3px solid #fe9901;
+        }
+    }
+    .reco-content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        li {
+            box-sizing: border-box;
+            // border: 1px solid black;
+            margin-bottom: 1px;
+            width: 237px;
+            height: 340px;
+            background-color: white;
+            a {
+                display: block;
+                height: 100%;
+                overflow: hidden;
+                &:hover img {
+                    transform: scale(1.05);
+                }
+                &:hover .reco-desc {
+                    color: $commoncolor;
+                }
+                img {
+                    display: block;
+                    width: 200px;
+                    height: 200px;
+                    margin: 20px 18.5px 0;
+                    transition: all 0.5s;
+                }
+                .reco-desc {
+                    color: #333;
+                    height: 40px;
+                    margin: 15px auto 5px;
+                    overflow: hidden;
+                    font-size: 12px;
+                    // font-weight: 300;
+                    word-break: break-all;
+                    line-height: 20px;
+                    width: 193px;
+                }
+                .price {
+                    margin-left: 20px;
+                    color: #F60;
+                    font-size: 16px;
+                    font-weight: 900;
+                }
+            }
+        }
+    }
+    .recoEnd {
+        position: relative;
+        width: 112px;
+        height: 22px;
+        text-align: center;
+        color: #CCC;
+        margin: 15px auto;
+        font-size: 18px;
+        .endleft {
+            position: absolute;
+            top: 11px;
+            width: 97px;
+            height: 1px;
+            background: #CCC;
+            left: -97px;
+        }
+        .endright {
+            position: absolute;
+            top: 11px;
+            width: 97px;
+            height: 1px;
+            background: #CCC;
+            right: -97px;
+        }
+    }
+}
+
+#floatAd {
+    width: 1232px;
+    height: 100px;
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    z-index: 100;
+}

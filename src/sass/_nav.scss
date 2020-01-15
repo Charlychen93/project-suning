@@ -2,8 +2,9 @@ nav {
     width: 100%;
     height: $navheight;
     display: flex;
+    background-color: white;
     // background-color: green;
-    .navBox{
+    .navBox {
         width: $innerwidth;
         margin: 0 auto;
         position: relative;
@@ -12,11 +13,11 @@ nav {
             display: flex;
             align-items: center;
             // flex-direction: column;
-            height:100%;
+            height: 100%;
             width: 163px;
             padding-left: 27px;
             background-color: $commoncolor;
-            p{
+            p {
                 width: 12px;
                 height: 12px;
                 margin-left: -18px;
@@ -28,9 +29,9 @@ nav {
                 font-weight: bold;
                 margin-left: 16px;
             }
-            }
+        }
         #nav {
-            height:100%;
+            height: 100%;
             width: 785px;
             // background-color: pink;
             padding-left: 10px;
@@ -44,28 +45,28 @@ nav {
                     line-height: $navheight;
                     font-weight: bold;
                     position: relative;
-                    &:hover a{
+                    &:hover a {
                         color: $commoncolor;
                     }
                     span {
                         width: 25px;
                         // display: none;
-                        visibility: hidden;
+                        // visibility: hidden;
                         height: 8px;
                         position: absolute;
                         left: 50%;
                         top: 38px;
-                        transform: translate(-50%,0);
+                        transform: translate(-50%, 0);
                         background: url(../../src/images/indexSprit.png) no-repeat -37px 0;
+                        transition: all 0.5s;
                     }
                     a {
                         color: #333;
                     }
                     &:hover span {
                         // display: block;
-                        visibility: visible;
+                        // visibility: visible;
                         top: 30px;
-                        transition: all 0.5s;
                     }
                     div {
                         width: 14px;
@@ -85,7 +86,7 @@ nav {
             img {
                 width: 170px;
                 height: $navheight;
-                }
             }
         }
     }
+}

@@ -1,0 +1,231 @@
+<html class="">
+
+<head>
+    <meta charset="utf-8">
+    <title>用户登录</title>
+    <meta name="keywords" content="苏宁易购">
+    <meta name="description" content="苏宁易购">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="https://ssl.suning.com/favicon.ico" type="image/x-icon">
+    <!-- 引入全站公用资源文件 -->
+    <!-- <link rel="stylesheet" type="text/css" href="https://res.suning.cn/project/passport/login/b2c_V7/css/??v3common.min.css,login.min.css?v=1541648459319"> -->
+
+    <link rel="stylesheet" href="../dist/stylesheets/login.css">
+    <meta content="true" name="autoclick">
+    <meta content="d488778a" name="siteid">
+    <meta content="8tLoX" name="pageid">
+</head>
+
+<body>
+    <!--<![endif]-->
+    <div class="header">
+        <a href="http://www.suning.com" class="logo"></a>
+        <div style="margin-left:189px;padding:37px 0 0 16px;*zoom:1">
+            <div style="margin-right:-100px;*zoom:1">
+                <div class="bind-phone">依据《网络安全法》，为保障您的账户安全和正常使用，请尽快完成手机号绑定验证！
+                    <a target="_blank" href="https://sale.suning.com/all/regProtocol/yssm.html">
+                        <font color="#f60">《隐私政策》</font>
+                    </a>已上线，将更有利于保护您的个人隐私。</div>
+            </div>
+            <a name="Logon_index_denglu020" id="LOGIN_ADVISE" href="http://ued.suning.com/survey/express/d29va1Nr" target="_blank" class="advise"><i></i>我想对“登录”提意见</a>
+        </div>
+
+    </div>
+    <!--pagename埋点 start-->
+    <input type="hidden" id="pagename" value="pgcate=10009;pgtitle=登录页">
+    <!--pagename埋点 end-->
+    <div class="main" sap-modid="oKx8J" style="background:url(https://image.suning.cn/uimg/cms/img/157864785042992604.jpg) center no-repeat;">
+        <div class="login-c">
+            <a href="https://cuxiao.suning.com/scms/KonkaCHAOPINcopy.html" target="_blank" class="single-link" name="Logon_index_denglu005"></a>
+            <div class="login-form">
+                <div class="login-tab">
+                    <a href="javascript:void(0)" class="tab-item"><span>扫码登录</span><i></i></a>
+                    <a href="javascript:void(0)" class="tab-item on"><span>账户登录</span><i></i></a>
+                </div>
+                <div class="pc-login" style="display: block;">
+
+                    <div class="username-login">
+                        <div>
+                            <div class="login-warning" style="display: none;"><i></i><span>公共场所不建议自动登录！</span></div>
+                            <div class="login-error" style="display:none;"><i></i><span></span></div>
+                            <div class="login-blank" style="line-height: 40px; display: block;">&nbsp;</div>
+                        </div>
+                        <div class="username-box">
+                            <div class="input-box" id="showErrorUsernameDiv">
+                                <input id="userName" type="text" autocomplete="off" value="" tabindex="1" maxlength="64">
+                                <label style="display: none;">用户名/手机/邮箱</label>
+                                <i class="icon username-icon"></i>
+                                <i class="clear" style="display: inline;"></i>
+                            </div>
+                            <div class="email-list hide" style="display: none;"></div>
+                        </div>
+                        <div class="password-box">
+                            <div class="input-box" id="showErrorPwdDiv">
+                                <input id="password" type="password" autocomplete="off" tabindex="2">
+                                <label style="display: none;">密码</label>
+                                <i class="icon password-icon"></i>
+                                <i class="clear" style="display: inline;"></i>
+                            </div>
+                        </div>
+                        <div class="verify-box clearfix showErrorVerifyCodeDiv" style="display:none;">
+                            <div class="input-box">
+                                <input class="validate" type="text" maxlength="4" autocomplete="off" tabindex="3" name="Logon_index_denglu004">
+                                <label>验证码</label>
+                                <i class="icon verify-icon"></i>
+                                <i class="clear"></i>
+                                <i class="ok" style="display: none;"></i>
+                                <i class="error" style="display: none;"></i>
+                            </div>
+                            <a href="javascript:void(0);" class="verify-code">
+                                <img id="imageCode1" src="https://vcs.suning.com/vcs/imageCode.htm?uuid=b70d21bc-c7d7-4bfa-9130-2207952a10db&amp;sceneId=logonImg&amp;yys=1578916418859" alt="图形验证码">
+                                <span>换一张</span>
+                            </a>
+                        </div>
+                        <div id="Logon_index_denglu039" class="siller-box sillerVerifyCode" style="display:none;margin-bottom:20px;">
+                            <div id="siller1"></div>
+                        </div>
+
+                        <div class="siller-box sillerVerifyCode" id="iarUsername" style="display: none;">
+                            <div id="iar1"></div>
+                        </div>
+
+                        <div class="login-help clearfix">
+                            <a class="login-switch" href="javascript:void(0)"><i></i>短信验证码登录</a>
+                            <a id="FORGET_PWD" href="javascript:void(0);" onclick="javascript:forgetPwdClick(); return false;" name="Logon_index_denglu001" class="forget-password">忘记密码？</a>
+
+                        </div>
+                        <a id="submit" href="javascript:void(0)" onclick="javascript:prepareLoginSubmit();return false;" name="Logon_index_denglu002" class="login-submit">登 录</a>
+                    </div>
+                    <div class="phone-login">
+                        <div>
+                            <div class="login-warning" style="display: none;"><i></i><span>公共场所不建议自动登录！</span></div>
+                            <div class="login-error" style="display:none;"><i></i><span></span></div>
+                            <div class="login-blank" style="line-height: 40px; display: block;">&nbsp;</div>
+                        </div>
+                        <div class="phone-box">
+                            <div class="input-box" id="showErrorPhoneNumberDiv">
+                                <input id="phoneNumber" type="text" autocomplete="off" tabindex="1" maxlength="11">
+                                <label>手机号码</label>
+                                <i class="icon username-icon"></i>
+                                <i class="clear"></i>
+                            </div>
+                        </div>
+                        <div class="verify-box clearfix showErrorVerifyCodeDiv" style="display:none;">
+                            <div class="input-box">
+                                <input class="validate" type="text" maxlength="4" autocomplete="off" tabindex="2">
+                                <label>验证码</label>
+                                <i class="icon verify-icon"></i>
+                                <i class="clear"></i>
+                                <i class="ok" style="display: none;"></i>
+                                <i class="error" style="display: none;"></i>
+                            </div>
+                            <a name="Logon_index_denglu035" href="javascript:void(0)" class="verify-code">
+                                <img id="imageCode2" src="https://vcs.suning.com/vcs/imageCode.htm?uuid=b70d21bc-c7d7-4bfa-9130-2207952a10db&amp;sceneId=logonImg&amp;yys=1578916418859" alt="图形验证码">
+                                <span>换一张</span>
+                            </a>
+                        </div>
+                        <div id="Logon_index_denglu040" class="siller-box sillerVerifyCode" style="display:none;">
+                            <div id="siller2"></div>
+                        </div>
+
+                        <div class="siller-box sillerVerifyCode" id="iarUsernamedx" style="display: none;">
+                            <div id="iar1dx"></div>
+                        </div>
+
+                        <div class="sms-box clearfix">
+                            <div class="input-box" id="showErrorSmsCodeDiv">
+                                <input id="smsCode" type="text" autocomplete="off" tabindex="3" maxlength="6">
+                                <label>手机验证码</label>
+                                <i class="icon password-icon"></i>
+                                <i class="clear"></i>
+                            </div>
+                            <a name="Logon_index_denglu033" href="javascript:void(0)" class="send-sms">获取验证码</a>
+                        </div>
+                        <div style="padding-top:2px;padding-bottom:4px;">
+                            <p class="sms-sent">验证码已发送到您的手机，<em>5</em>分钟内有效</p>
+                            <div class="voice-verify clearfix">
+                                <span>如果您收不到验证码？</span>
+                                <a name="Logon_index_denglu034" href="javascript:void(0)" class="send-voice">获取语音验证码</a>
+                            </div>
+                            <div class="voice-sent clearfix">
+                                <span>电话拨打中</span>
+                                <i></i>
+                            </div>
+                            <div class="blank">&nbsp;</div>
+                        </div>
+
+                        <div class="login-help clearfix">
+                            <a class="login-switch" href="javascript:void(0)"><i></i>账号密码登录</a>
+                            <a id="FORGET_PWD" href="javascript:void(0);" onclick="javascript:forgetPwdClick(); return false;" name="Logon_index_denglu001" class="forget-password">忘记密码？</a>
+                        </div>
+                        <a id="submit" href="javascript:void(0)" onclick="javascript:prepareLoginSubmit();return false;" name="Logon_index_denglu002" class="login-submit">登 录</a>
+                    </div>
+
+
+                    <form method="post" name="snapshotForm" action="login" id="snapshotForm">
+                        <input type="hidden" id="username1" name="username" value="">
+                        <input type="hidden" id="password1" name="password" value="">
+                        <input type="hidden" id="loginTheme1" name="loginTheme" value="">
+                        <input type="hidden" id="highRiskRedirectFlag1" name="highRiskRedirectFlag" value="">
+                        <input type="hidden" id="service1" name="service" value="">
+                        <input type="hidden" id="oauth_redirect1" name="oauth_redirect" value="">
+                        <input type="hidden" id="trust_redirect1" name="trust_redirect" value="">
+                        <input type="hidden" id="uuid1" name="uuid" value="">
+                        <input type="hidden" id="validate1" name="verifyCode" value="">
+                        <input type="hidden" id="detect" name="detect" value="">
+                        <input type="hidden" id="terminal" name="terminal" value="">
+                        <input type="hidden" id="loginChannel" name="loginChannel" value="">
+                        <input type="hidden" id="dfpToken" name="dfpToken" value="">
+                        <!-- <input type='hidden' id="rememberMeVal" name='rememberMe' value="" />  -->
+                    </form>
+                </div>
+                <div class="scan-login" style="display: none;">
+
+                    <div class="scan-box clearfix">
+
+                        <div class="qrcode" style="width:141px;height:141px;margin:0 auto;transition:.3s all;position:relative;">
+                            <img src="https://passport.suning.com/ids/qrLoginUuidGenerate.htm?image=true&amp;yys=1578916418864" style="display:block;width:100%;height:100%;" class="qrCodesId">
+                            <span style="position:absolute;top:-30px;left:0;padding-left:8px;display:none">今日首次扫码获<em style="color:#f60;">10</em>云钻</span>
+                        </div>
+                        <div class="phone-scan"></div>
+                    </div>
+
+                    <div id="scanErrorTip" style="display: none;"></div>
+                    <div class="scan-success" style="display: none;">
+                        <i></i>
+                        <p class="success-txt">扫描成功</p>
+                        <p class="not-refresh">请勿刷新页面，按手机提示操作！</p>
+                    </div>
+
+                    <p class="open-app"><i></i>打开<a name="Logon_index_denglu019" id="DOWNLOAD_APP" href="http://sale.suning.com/syb/20120419xsjkhd/index.html" target="_blank"><em>苏宁易购APP</em></a>扫码登录</p>
+
+                </div>
+                <div class="free-reg">
+                    <a id="FREE_TO_REG" href="javascript:void(0);" name="Logon_index_denglu003" onclick="javascript:freeToRegClick(); return false;">免费注册 有惊喜 &gt;</a>
+                </div>
+                <div class="bind-login">
+                    <span class="title">使用以下账号登录</span>
+                    <div class="common clearfix">
+                        <a name="Logon_index_denglu027" href="javascript:void(0);" onclick="javascript:qqLogin(); return false;" class="qq"><i></i>QQ</a>
+                        <a name="Logon_index_denglu026" href="javascript:void(0);" onclick="javascript:weixinLogin(); return false;" class="weixin"><i></i>微信</a>
+                        <!-- <a name="Logon_index_denglu032" href="javascript:void(0);" class="zhifubao"><i></i>支付宝</a> -->
+                        <a name="Logon_index_denglu017" href="javascript:void(0);" onclick="javascript:eppLogin(); return false;" class="yifubao"><i></i>易付宝</a>
+                        <a name="Logon_index_denglu031" href="javascript:void(0);" onclick="javascript:weiboLogin(); return false;" class="weibo"><i></i>微博</a>
+                        <!--<a name="Logon_index_denglu015" href="javascript:void(0);" onclick="javascript:pptvLogin(); return false;" class="pptv"><i></i>PPTV</a>-->
+                        <!--<a name="Logon_index_denglu012" href="javascript:void(0);" onclick="javascript:memberCardLogin(); return false;" style="padding-right:0;border-right:0" >门店会员卡</a>-->
+                        <!--<a name="Logon_index_denglu030" href="javascript:void(0)" class="view-more"><i></i>更多</a>-->
+
+                    </div>
+                    <div class="more">
+                        <!--    <a name="Logon_index_denglu012" href="javascript:void(0);" onclick="javascript:memberCardLogin(); return false;">门店会员卡</a>-->
+                        <!--<a name="Logon_index_denglu015" href="javascript:void(0);" onclick="javascript:pptvLogin(); return false;">PPTV</a>-->
+                    </div>
+                </div>
+                <div class="login-switch" name="Logon_index_denglu018"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

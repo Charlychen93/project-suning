@@ -1,2 +1,0 @@
-# project-suning
-suningyigou
