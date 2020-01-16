@@ -11,5 +11,7 @@ import "../css/footer.css";
 // import "../fonts/iconfont.css";
 
 import { indexjs } from "./index.js";
+import { banner } from "./index.js";
 
 new indexjs().init();
+new banner().init();

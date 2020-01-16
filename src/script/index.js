@@ -2,22 +2,10 @@ class indexjs {
     constructor() {
         this.renderUl = $('.reco-content');
         this.cityflag = true;
-        this.bannerBox = $('.bannermid');
-        this.bannerUl = $('.banner');
-        this.bannerLi = $('.banner').children();
-        this.bannerNav = $('.bn-item');
-        this.banTimer = null;
-        this.leftArrow = $('.leftArrow');
-        this.rightArrow = $('.rightArrow');
-        this.banindex = 0;
-        this.length = parseInt(this.bannerLi.eq(0).css('width'));
-
-
-
     }
     init() {
         $.ajax({
-            url: 'http://localhost/project-suning/php/suninglist.php',
+            url: 'http://localhost/project-suning/src/php/suninglist.php',
             dataType: 'json'
         }).done((data) => {
             // console.log(data);
@@ -48,7 +36,6 @@ class indexjs {
 
         this.adOpen();
         this.city();
-        this.banner();
         this.tabswitch();
         this.stairsChange();
     }
@@ -90,54 +77,6 @@ class indexjs {
         })
     }
 
-    banner() {
-        let _this = this;
-        this.bannerBox.hover(() => {
-            this.leftArrow.show();
-            this.rightArrow.show();
-            clearInterval(this.banTimer);
-        }, () => {
-            this.leftArrow.hide();
-            this.rightArrow.hide();
-            autoplay();
-        })
-
-        this.bannerNav.on('mouseover', function() {
-            _this.banindex = $(this).index();
-            banswitch();
-        })
-
-        _this.leftArrow.on('click', () => {
-            _this.banindex--;
-            banswitch();
-        })
-
-        function banswitch() {
-            _this.banindex > 7 ?
-                _this.banindex = 0 :
-                _this.banindex;
-            _this.banindex < 0 ? _this.banindex = 7 : _this.banindex;
-            _this.bannerUl.css('left', `-${_this.banindex*_this.length}px`);
-            $.each(_this.bannerNav, (banindex, value) => {
-                $(value).removeClass('show');
-            })
-            _this.bannerNav.eq(_this.banindex).addClass('show');
-        }
-
-        _this.rightArrow.on('click', () => {
-            _this.banindex++;
-            banswitch();
-            // e.stopPropagation();
-        })
-
-        function autoplay() {
-            _this.banTimer = setInterval(() => {
-                _this.banindex++;
-                banswitch();
-            }, 3000)
-        }
-        autoplay();
-    }
 
     tabswitch() {
         let _this = this;
@@ -194,8 +133,69 @@ class indexjs {
 }
 // new indexjs().init();
 
+class banner {
+    constructor() {
+        this.bannerBox = $('.bannermid');
+        this.bannerUl = $('.banner');
+        this.bannerLi = $('.banner').children();
+        this.bannerNav = $('.bn-item');
+        this.banTimer = null;
+        this.leftArrow = $('.leftArrow');
+        this.rightArrow = $('.rightArrow');
+        this.banindex = 0;
+        this.length = parseInt(this.bannerLi.eq(0).css('width'));
 
+    }
+    init() {
+        let _this = this;
+        this.bannerBox.hover(() => {
+            this.leftArrow.show();
+            this.rightArrow.show();
+            clearInterval(this.banTimer);
+        }, () => {
+            this.leftArrow.hide();
+            this.rightArrow.hide();
+            this.autoplay();
+        })
+
+        this.bannerNav.on('mouseover', function() {
+            _this.banindex = $(this).index();
+            banswitch();
+        })
+
+        _this.leftArrow.on('click', () => {
+            _this.banindex--;
+            banswitch();
+        })
+
+        _this.rightArrow.on('click', () => {
+            _this.banindex++;
+            banswitch();
+            // e.stopPropagation();
+        })
+        this.autoplay()
+    }
+    autoplay() {
+        _this.banTimer = setInterval(() => {
+            _this.banindex++;
+            banswitch();
+        }, 3000)
+    }
+
+    banswitch() {
+        _this.banindex > 7 ?
+            _this.banindex = 0 :
+            _this.banindex;
+        _this.banindex < 0 ? _this.banindex = 7 : _this.banindex;
+        _this.bannerUl.css('left', `-${_this.banindex*_this.length}px`);
+        $.each(_this.bannerNav, (banindex, value) => {
+            $(value).removeClass('show');
+        })
+        _this.bannerNav.eq(_this.banindex).addClass('show');
+    }
+}
 
 export {
-    indexjs
+    indexjs,
+    banner
 }
