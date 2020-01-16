@@ -107,18 +107,30 @@
             }
         }
         .lowTr {
-            margin-top: 12px;
+            margin: 12px 19px 0 0;
             font-size: 12px;
+            display: flex;
             .lowTr1 {
                 width: 133px;
-                height: 100%;
+                height: 24px;
                 margin-right: 19px;
+                line-height: 24px;
+                text-align: center;
+                font-size: 14px;
+                cursor: default;
+                background-image: linear-gradient(90deg, #f60 7%, #f22 97%);
+                border-radius: 31px;
+                color: #FFF;
                 // background-image:linear-gradient(90deg,#f60 7%,#f22 97%);   
             }
             .lowTr2 {
                 width: 133px;
-                height: 100%;
-                color: #333;
+                height: 24px;
+                margin-right: 19px;
+                line-height: 24px;
+                text-align: center;
+                font-size: 14px;
+                cursor: default;
             }
         }
     }
@@ -189,12 +201,24 @@
 }
 
 .lowRight-tab {
-    padding: 17px 20px 0;
+    margin: 17px 20px 0;
+    width: 350px;
+    height: 175px;
+    position: relative;
+    overflow: hidden;
     .tabboxBig {
         height: 175px;
-        position: relative;
-        background-color: blueviolet;
+        position: absolute;
         border-radius: 4px;
+        overflow: hidden;
+        position: absolute;
+        left: 0;
+        top: 0;
+        // border: 1px solid black;
+        img {
+            width: 350px;
+            height: 175px;
+        }
         .tabbox-wrap {
             width: 158px;
             height: 98px;
@@ -216,15 +240,63 @@
             }
         }
     }
-    .tabboxSmall {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 12px;
-        li {
+}
+
+.tabbox-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .desc {
+        height: 28px;
+        width: 100%;
+        line-height: 28px;
+        font-size: 20px;
+        color: #333;
+        text-align: center;
+    }
+    .time-down {
+        height: 20px;
+        width: 100%;
+        line-height: 20px;
+        font-size: 14px;
+        color: #333;
+        text-align: center;
+        em {
+            line-height: 20px;
+            font-size: 14px;
+            text-align: center;
+            color: #ff2517;
+        }
+    }
+}
+
+.tabboxSmall {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 12px;
+    li {
+        border: 1px solid #f2f2f2;
+        border-radius: 4px;
+        overflow: hidden;
+        a {
+            display: block;
             width: 106px;
             height: 68px;
-            border: 1px solid #f2f2f2;
-            border-radius: 4px;
+            img {
+                display: block;
+                width: 90px;
+                height: 46px;
+                margin: 0 9px 3px;
+            }
+            p {
+                color: #333;
+                height: 14px;
+                line-height: 14px;
+                font-size: 14px;
+                text-align: center;
+                overflow: hidden;
+                font-weight: 300;
+            }
         }
     }
 }
@@ -491,9 +563,9 @@
                     border-radius: 12px;
                     font-size: 14px;
                     line-height: 24px;
-                    color: #FFF;
-                    background: #f86e6e;
-                    background-image: linear-gradient(90deg, #db5757 0, #f86e6e 100%);
+                    color: #333;
+                    // background: #f86e6e;
+                    // background-image: linear-gradient(90deg, #db5757 0, #f86e6e 100%);
                 }
             }
         }
@@ -507,6 +579,7 @@
     display: flex;
     flex-direction: column;
     li {
+        margin-bottom: 19px;
         a {
             width: 350px;
             height: 90px;
@@ -732,6 +805,43 @@
                     font-weight: 100;
                 }
             }
+        }
+    }
+}
+
+#stairs {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 1000;
+    right: auto;
+    margin-left: -670px;
+    margin-top: -150px;
+    display: block;
+    background-color: #f8f8f8;
+    .stairsImg {
+        position: absolute;
+        width: 45px;
+        height: 37px;
+        left: 13px;
+        top: -29px;
+        z-index: 1;
+        background: url(../../src/images/indexSprit.png) -302px -80px;
+    }
+    .stairsUl {
+        padding-top: 10px;
+        border: 1px solid #ddd;
+        li {
+            width: 68px;
+            height: 28px;
+            line-height: 28px;
+            text-align: center;
+            font-size: 12px;
+            color: #333;
+            border-bottom: 1px solid #e8e8e8;
+        }
+        .show {
+            background-color: $commoncolor;
         }
     }
 }

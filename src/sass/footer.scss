@@ -1,0 +1,36 @@
+@charset 'utf-8';
+@import 'compass/reset';
+@import 'compass/css3';
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+$innerwidth:1190px;
+$commoncolor:#f90;
+#foot {
+    height: 200px;
+    padding-top: 15px;
+    background-color: #ffffff;
+    margin-bottom: 120px;
+    p {
+        width: $innerwidth;
+        margin: 0 auto;
+        height: 25px;
+        line-height: 25px;
+        font-size: 12px;
+        text-align: center;
+        color: #999;
+        a {
+            color: #666;
+        }
+        span {
+            display: inline-block;
+            margin: 0 8px;
+            color: #999999;
+        }
+    }
+}

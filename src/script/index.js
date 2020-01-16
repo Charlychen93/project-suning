@@ -12,13 +12,15 @@ class indexjs {
         this.banindex = 0;
         this.length = parseInt(this.bannerLi.eq(0).css('width'));
 
+
+
     }
     init() {
         $.ajax({
             url: 'http://localhost/project-suning/php/suninglist.php',
             dataType: 'json'
         }).done((data) => {
-            console.log(data);
+            // console.log(data);
             let strhtml = '';
             $.each(data, (index, value) => {
                 strhtml += `
@@ -36,9 +38,19 @@ class indexjs {
             })
             this.renderUl.html(strhtml);
         })
+
+        $.ajax({
+            url: './footer.html',
+            type: 'get',
+        }).done((res) => {
+            $('footer').html(res);
+        })
+
         this.adOpen();
         this.city();
         this.banner();
+        this.tabswitch();
+        this.stairsChange();
     }
     city() {
         // console.log(this.cityflag);
@@ -126,6 +138,59 @@ class indexjs {
         }
         autoplay();
     }
+
+    tabswitch() {
+        let _this = this;
+        this.tabSmall = $('.tabboxSmall').children();
+        this.tabBig = $('.tabboxBig');
+        this.tabSmall.on('mouseover', function() {
+            _this.tabBig.eq($(this).index()).show().siblings('li').hide();
+        })
+    }
+
+    stairsChange() {
+        $('.stairsUl li').not('.backTop').on('click', function() {
+            $(this).addClass('show').siblings('li').removeClass('show');
+            let $top = $('.louceng').eq($(this).index()).offset().top;
+            $('html').animate({
+                scrollTop: $top
+            })
+
+        })
+
+        $('.backTop').on('click', function() {
+            $('html').animate({
+                scrollTop: 0
+            })
+        })
+
+        $(window).on('scroll', function() {
+            let $top = $(window).scrollTop();
+            if ($top >= 1000) {
+                // console.log(123);
+
+                $('#stairs').show();
+            } else {
+                // console.log(123);
+
+                $('#stairs').hide();
+            }
+
+            $('.louceng').each(function(index, element) {
+                // console.log(123);
+
+                let $loucengtop = $('.louceng').eq(index).offset().top + $('.louceng').eq(index).height() / 2;
+                if ($loucengtop > $top) {
+                    $('.stairsUl li').not('.backTop').removeClass('show');
+                    $('.stairsUl li').not('.backTop').eq(index).addClass('show');
+                    return false
+                }
+            })
+
+        })
+
+    }
+
 }
 // new indexjs().init();
 

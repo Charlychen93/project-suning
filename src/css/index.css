@@ -1,0 +1,2141 @@
+/* line 5, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 4, ../sass/index.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 8, ../sass/index.scss */
+li {
+  list-style: none;
+}
+
+/* line 25, ../sass/index.scss */
+body {
+  background-color: #eee;
+}
+
+/* line 1, ../sass/_header.scss */
+.advert {
+  width: 100%;
+  position: relative;
+}
+/* line 4, ../sass/_header.scss */
+.advert .advert1 {
+  display: block;
+  background-color: #dd1531;
+}
+/* line 7, ../sass/_header.scss */
+.advert .advert1 img {
+  width: 1190px;
+  height: 100px;
+  margin: 0 auto;
+  display: block;
+}
+/* line 14, ../sass/_header.scss */
+.advert .closead {
+  display: block;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  right: 56px;
+  top: 3px;
+  background: url(../../src/images/indexSprit.png) -241px -145px;
+}
+
+/* line 25, ../sass/_header.scss */
+#header {
+  width: 100%;
+}
+/* line 27, ../sass/_header.scss */
+#header .iconfont,
+#header span {
+  transition: all 0.3s;
+  font-size: 10px;
+  display: inline-block;
+}
+
+/* line 36, ../sass/_header.scss */
+#login {
+  width: 100%;
+  box-sizing: border-box;
+  height: 35px;
+  font-size: 12px;
+  background-color: #f5f5f5;
+  border: 1px solid #eeeeee;
+  position: relative;
+}
+/* line 44, ../sass/_header.scss */
+#login .loginIn {
+  width: 1190px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+/* line 49, ../sass/_header.scss */
+#login .loginIn .webguide {
+  line-height: 35px;
+  height: 100%;
+  display: flex;
+}
+/* line 54, ../sass/_header.scss */
+#login .loginIn .userlogin {
+  height: 100%;
+}
+/* line 57, ../sass/_header.scss */
+#login .loginIn .web-itema {
+  display: block;
+  color: #666666;
+  padding: 0 10px;
+}
+/* line 63, ../sass/_header.scss */
+#login .openad {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 3px;
+  right: 56px;
+  background: url(../../src/images/indexSprit.png) -241px -160px;
+}
+
+/* line 74, ../sass/_header.scss */
+#login .webitem {
+  position: relative;
+}
+/* line 76, ../sass/_header.scss */
+#login .webitem:hover .webhide {
+  height: auto;
+  padding: 20px 20px;
+  top: 33px;
+  border: 1px solid #eee;
+  border-top: none;
+}
+/* line 83, ../sass/_header.scss */
+#login .webitem .web-itema {
+  position: relative;
+  box-sizing: border-box;
+}
+/* line 87, ../sass/_header.scss */
+#login .webitem .web-itema:hover {
+  margin-top: -1px;
+  border: 1px solid #eee;
+  border-bottom: none;
+  background-color: white;
+  height: 34px;
+  color: #f90;
+  padding: 0 9px;
+}
+/* line 96, ../sass/_header.scss */
+#login .webitem .web-itema:hover .iconfont {
+  transform: rotateZ(-180deg);
+}
+
+/* line 103, ../sass/_header.scss */
+.webitem .webhide {
+  position: absolute;
+  transition: all 0.3s;
+  left: 0;
+  top: 32px;
+  width: 176px;
+  height: 0;
+  padding: 0 20px;
+  z-index: 99;
+  background-color: white;
+  overflow: hidden;
+}
+/* line 114, ../sass/_header.scss */
+.webitem .webhide .webhide-title {
+  color: #333;
+  font-weight: bold;
+  height: 25px;
+  font-size: 14px;
+  line-height: 25px;
+}
+/* line 121, ../sass/_header.scss */
+.webitem .webhide .webhide-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 125, ../sass/_header.scss */
+.webitem .webhide .webhide-content li:hover a {
+  color: #f90;
+}
+/* line 128, ../sass/_header.scss */
+.webitem .webhide .webhide-content li a {
+  display: block;
+  text-align: left;
+  color: #333;
+  height: 25px;
+  width: 78px;
+  font-size: 12px;
+  line-height: 25px;
+}
+
+/* line 142, ../sass/_header.scss */
+#login .city {
+  display: block;
+  padding: 6px 6px;
+  height: 23px;
+  line-height: 23px;
+  display: flex;
+  position: relative;
+}
+/* line 153, ../sass/_header.scss */
+#login .city i {
+  margin: 4px 6px 0;
+  width: 12px;
+  height: 15px;
+  background: url(../../src/images/indexSprit.png) -387px -183px;
+}
+/* line 159, ../sass/_header.scss */
+#login .city em {
+  color: #666;
+  margin-right: 5px;
+}
+/* line 163, ../sass/_header.scss */
+#login .city .arrowdown {
+  width: 8px;
+  height: 6px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 15px;
+  overflow: hidden;
+}
+/* line 171, ../sass/_header.scss */
+#login .city .arrowdown .arrowbox {
+  display: block;
+  border-width: 6px 4px;
+  border-color: #666 transparent #FA0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-style: solid;
+  transition: all 0.5s;
+}
+
+/* line 186, ../sass/_header.scss */
+#login .userlogin {
+  display: flex;
+}
+/* line 188, ../sass/_header.scss */
+#login .userlogin div {
+  height: 100%;
+  line-height: 35px;
+}
+/* line 193, ../sass/_header.scss */
+#login .userlogin .loginReg a {
+  display: inline-block;
+}
+
+/* line 200, ../sass/_header.scss */
+#search {
+  height: 110px;
+  background-color: white;
+}
+/* line 203, ../sass/_header.scss */
+#search .suningBox {
+  width: 1190px;
+  margin: 0 auto;
+  display: flex;
+}
+/* line 208, ../sass/_header.scss */
+#search .suningBox .snlogo img {
+  width: 190px;
+  height: 90px;
+}
+/* line 214, ../sass/_header.scss */
+#search .suningBox .twinkle img {
+  width: 160px;
+  height: 100px;
+}
+/* line 219, ../sass/_header.scss */
+#search .suningBox .searchBoxL {
+  width: 540px;
+  height: 63px;
+  padding: 30px;
+  margin-left: 10px;
+}
+/* line 227, ../sass/_header.scss */
+#search .searchBoxL .searchBoxS {
+  width: 536px;
+  height: 36px;
+  border: 2px solid #f90;
+  display: flex;
+  position: relative;
+}
+/* line 233, ../sass/_header.scss */
+#search .searchBoxL .searchBoxS .iconfont {
+  text-align: right;
+  font-size: 15px;
+  width: 25px;
+  height: 36px;
+  line-height: 36px;
+}
+/* line 240, ../sass/_header.scss */
+#search .searchBoxL .searchBoxS .textinput {
+  box-sizing: border-box;
+  border: none;
+  width: 390px;
+  height: 36px;
+  outline: none;
+}
+/* line 247, ../sass/_header.scss */
+#search .searchBoxL .searchBoxS .searchinput {
+  font-size: 18px;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  width: 120px;
+  height: 40px;
+  color: white;
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  background-color: #f90;
+}
+
+/* line 266, ../sass/_header.scss */
+.searchBoxL .searchlink {
+  margin-top: 5px;
+  display: flex;
+}
+/* line 272, ../sass/_header.scss */
+.searchBoxL .searchlink a {
+  color: #999;
+  font-size: 12px;
+  font-weight: 400;
+}
+/* line 276, ../sass/_header.scss */
+.searchBoxL .searchlink a:hover {
+  color: #f90;
+}
+/* line 280, ../sass/_header.scss */
+.searchBoxL .searchlink span {
+  color: #eee;
+  margin: 0 10px;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+/* line 1, ../sass/_nav.scss */
+nav {
+  width: 100%;
+  height: 38px;
+  display: flex;
+  background-color: white;
+}
+/* line 7, ../sass/_nav.scss */
+nav .navBox {
+  width: 1190px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+}
+/* line 12, ../sass/_nav.scss */
+nav .navBox .goodsclass {
+  display: flex;
+  align-items: center;
+  width: 163px;
+  padding-left: 27px;
+  background-color: #f90;
+}
+/* line 20, ../sass/_nav.scss */
+nav .navBox .goodsclass p {
+  width: 12px;
+  height: 12px;
+  margin-left: -18px;
+  background: url(../../src/images/indexSprit.png) no-repeat 0 0;
+}
+/* line 26, ../sass/_nav.scss */
+nav .navBox .goodsclass span {
+  font-size: 12px;
+  color: white;
+  font-weight: bold;
+  margin-left: 16px;
+}
+/* line 33, ../sass/_nav.scss */
+nav .navBox #nav {
+  height: 100%;
+  width: 785px;
+  padding-left: 10px;
+}
+/* line 39, ../sass/_nav.scss */
+nav .navBox #nav ul {
+  display: flex;
+}
+/* line 41, ../sass/_nav.scss */
+nav .navBox #nav ul li {
+  line-height: 38px;
+  padding: 0 12px 0 13px;
+  font-size: 15px;
+  line-height: 38px;
+  font-weight: bold;
+  position: relative;
+}
+/* line 48, ../sass/_nav.scss */
+nav .navBox #nav ul li:hover a {
+  color: #f90;
+}
+/* line 51, ../sass/_nav.scss */
+nav .navBox #nav ul li span {
+  width: 25px;
+  height: 8px;
+  position: absolute;
+  left: 50%;
+  top: 38px;
+  transform: translate(-50%, 0);
+  background: url(../../src/images/indexSprit.png) no-repeat -37px 0;
+  transition: all 0.5s;
+}
+/* line 63, ../sass/_nav.scss */
+nav .navBox #nav ul li a {
+  color: #333;
+}
+/* line 66, ../sass/_nav.scss */
+nav .navBox #nav ul li:hover span {
+  top: 30px;
+}
+/* line 71, ../sass/_nav.scss */
+nav .navBox #nav ul li div {
+  width: 14px;
+  height: 17px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url(../../src/images/indexSprit.png) no-repeat -345px -213px;
+}
+/* line 82, ../sass/_nav.scss */
+nav .navBox .publicity {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/* line 86, ../sass/_nav.scss */
+nav .navBox .publicity img {
+  width: 170px;
+  height: 38px;
+}
+
+/* line 1, ../sass/_banner.scss */
+#bannerwrap {
+  width: 100%;
+  height: 482px;
+  position: relative;
+}
+/* line 5, ../sass/_banner.scss */
+#bannerwrap .bannerbg {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+/* line 10, ../sass/_banner.scss */
+#bannerwrap .bannerbg img {
+  height: 482px;
+  width: auto;
+}
+/* line 16, ../sass/_banner.scss */
+#bannerwrap .bannerPo {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/* line 22, ../sass/_banner.scss */
+#bannerwrap .bannerPo .bannerinner {
+  width: 1190px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+/* line 32, ../sass/_banner.scss */
+.bannerinner .goodssheet {
+  width: 190px;
+  height: 100%;
+  background-color: #252221;
+}
+/* line 36, ../sass/_banner.scss */
+.bannerinner .goodssheet li {
+  width: 177px;
+  height: 32px;
+  padding: 0 8px 0;
+  display: flex;
+  align-items: center;
+}
+/* line 42, ../sass/_banner.scss */
+.bannerinner .goodssheet li:hover {
+  background-color: #fff;
+}
+/* line 45, ../sass/_banner.scss */
+.bannerinner .goodssheet li:hover a {
+  color: #252221;
+}
+/* line 48, ../sass/_banner.scss */
+.bannerinner .goodssheet li a {
+  color: white;
+  font-size: 13px;
+  font-weight: 400;
+}
+/* line 52, ../sass/_banner.scss */
+.bannerinner .goodssheet li a:hover {
+  color: #f90;
+}
+/* line 56, ../sass/_banner.scss */
+.bannerinner .goodssheet li em {
+  width: 1px;
+  height: 12px;
+  background-color: #d8d8d8;
+  opacity: 0.4;
+  margin: 0 5px;
+}
+/* line 65, ../sass/_banner.scss */
+.bannerinner .bannermid {
+  width: 830px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+/* line 70, ../sass/_banner.scss */
+.bannerinner .bannermid .bannerNav {
+  position: absolute;
+  left: 50%;
+  top: 323px;
+  transform: translate(-50%, 0);
+  z-index: 99;
+}
+/* line 76, ../sass/_banner.scss */
+.bannerinner .bannermid .bannerNav .bn-item {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 4px;
+  border-radius: 10px;
+  background-color: white;
+}
+/* line 85, ../sass/_banner.scss */
+.bannerinner .bannermid .bannerNav .show {
+  background-color: #f90;
+}
+/* line 89, ../sass/_banner.scss */
+.bannerinner .bannermid .sidebar {
+  width: 816px;
+  height: 122px;
+  position: absolute;
+  left: 50%;
+  bottom: 8px;
+  transform: translate(-50%, 0);
+}
+/* line 97, ../sass/_banner.scss */
+.bannerinner .bannermid .sidebar .sideshow {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+/* line 102, ../sass/_banner.scss */
+.bannerinner .bannermid .sidebar .sideshow li {
+  width: 202px;
+  height: 100%;
+  background-color: white;
+  position: relative;
+}
+/* line 107, ../sass/_banner.scss */
+.bannerinner .bannermid .sidebar .sideshow li .title {
+  font-size: 12px;
+  padding: 0;
+  width: 95px;
+  height: 22px;
+  line-height: 22px;
+  font-weight: bold;
+  font-size: 17px;
+  word-break: break-all;
+  margin: 10px 0 0 12px;
+}
+/* line 118, ../sass/_banner.scss */
+.bannerinner .bannermid .sidebar .sideshow li .desc {
+  font-size: 12px;
+  padding: 0;
+  width: 95px;
+  height: 19px;
+  line-height: 19px;
+  font-size: 14px;
+  word-break: break-all;
+  color: #666;
+  margin: 1px 0 0 12px;
+}
+/* line 129, ../sass/_banner.scss */
+.bannerinner .bannermid .sidebar .sideshow li img {
+  color: #333;
+  position: absolute;
+  bottom: 6px;
+  width: 80px;
+  height: 80px;
+  right: 10px;
+}
+/* line 140, ../sass/_banner.scss */
+.bannerinner .bannermid .banner {
+  width: 6640px;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/* line 147, ../sass/_banner.scss */
+.bannerinner .bannermid .banner li {
+  width: 830px;
+  height: 100%;
+}
+/* line 154, ../sass/_banner.scss */
+.bannerinner .bannermid .leftArrow {
+  color: #333;
+  position: absolute;
+  width: 30px;
+  height: 64px;
+  top: 180px;
+  background: url(../../src/images/indexSprit.png) no-repeat -82px -145px;
+  left: 0;
+  display: none;
+  z-index: 99;
+}
+/* line 165, ../sass/_banner.scss */
+.bannerinner .bannermid .rightArrow {
+  color: #333;
+  position: absolute;
+  width: 30px;
+  height: 64px;
+  top: 180px;
+  background: url(../../src/images/indexSprit.png) no-repeat -120px -145px;
+  right: 0;
+  display: none;
+  z-index: 99;
+}
+/* line 177, ../sass/_banner.scss */
+.bannerinner .userBox {
+  width: 170px;
+  height: 100%;
+  background: white;
+}
+/* line 182, ../sass/_banner.scss */
+.bannerinner .userBox .userinfo {
+  width: 100%;
+  height: 156px;
+  padding-top: 11px;
+  border-bottom: 1px solid #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* line 190, ../sass/_banner.scss */
+.bannerinner .userBox .userinfo .userimg {
+  width: 52px;
+  height: 52px;
+  background: url(../../src/images/indexSprit.png) no-repeat -90px -24px;
+}
+/* line 195, ../sass/_banner.scss */
+.bannerinner .userBox .userinfo p {
+  margin-top: 8px;
+  text-align: center;
+  font-size: 12px;
+  height: 24px;
+  line-height: 24px;
+}
+/* line 202, ../sass/_banner.scss */
+.bannerinner .userBox .userinfo .newvip {
+  color: #333;
+  width: 100%;
+  margin: 6px auto 15px;
+  height: 22px;
+  display: flex;
+  justify-content: space-evenly;
+}
+/* line 210, ../sass/_banner.scss */
+.bannerinner .userBox .userinfo .award {
+  width: 100%;
+  height: 18px;
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-evenly;
+}
+/* line 218, ../sass/_banner.scss */
+.bannerinner .userBox .toutiao {
+  width: 150px;
+  height: 144px;
+  overflow: hidden;
+  margin: 11px 10px;
+}
+/* line 224, ../sass/_banner.scss */
+.bannerinner .userBox .toutiao ul li {
+  height: 48px;
+}
+/* line 226, ../sass/_banner.scss */
+.bannerinner .userBox .toutiao ul li a {
+  color: #333;
+  font-size: 12px;
+}
+/* line 229, ../sass/_banner.scss */
+.bannerinner .userBox .toutiao ul li a:hover {
+  color: #f90;
+}
+/* line 232, ../sass/_banner.scss */
+.bannerinner .userBox .toutiao ul li a span {
+  color: #f90;
+}
+/* line 239, ../sass/_banner.scss */
+.bannerinner .userBox .kuaijie {
+  background-color: #f2f2f2;
+  width: 100%;
+}
+/* line 242, ../sass/_banner.scss */
+.bannerinner .userBox .kuaijie ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/* line 246, ../sass/_banner.scss */
+.bannerinner .userBox .kuaijie ul li {
+  width: 56px;
+  height: 62px;
+  background-color: white;
+  padding-top: 10px;
+  margin-top: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* line 255, ../sass/_banner.scss */
+.bannerinner .userBox .kuaijie ul li .iconfont {
+  color: #f90;
+  font-size: 24px;
+}
+/* line 259, ../sass/_banner.scss */
+.bannerinner .userBox .kuaijie ul li a {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #333333;
+}
+/* line 264, ../sass/_banner.scss */
+.bannerinner .userBox .kuaijie ul li:hover a {
+  color: #f90;
+}
+
+/* line 1, ../sass/_nianhuo.scss */
+#centerContent {
+  background-color: #eee;
+}
+/* line 3, ../sass/_nianhuo.scss */
+#centerContent .nianhuo {
+  width: 1190px;
+  height: 373px;
+  overflow: hidden;
+  margin: 0 auto;
+  background: url(../../src/images/nianhuo.png) 50% 0 no-repeat;
+}
+/* line 9, ../sass/_nianhuo.scss */
+#centerContent .nianhuo .nianhuoTitle {
+  display: block;
+  width: 100%;
+  height: 150px;
+}
+/* line 14, ../sass/_nianhuo.scss */
+#centerContent .nianhuo #nianhuoUl {
+  display: flex;
+  justify-content: space-between;
+}
+/* line 19, ../sass/_nianhuo.scss */
+#centerContent .nianhuo #nianhuoUl li a {
+  width: 235px;
+  height: 213px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* line 25, ../sass/_nianhuo.scss */
+#centerContent .nianhuo #nianhuoUl li a img {
+  margin-top: 10px;
+  width: 120px;
+  height: 120px;
+}
+/* line 30, ../sass/_nianhuo.scss */
+#centerContent .nianhuo #nianhuoUl li a .nianhuo-item {
+  color: white;
+  height: 28px;
+  line-height: 28px;
+  margin-top: 16px;
+  font-size: 20px;
+  font-weight: 100;
+}
+/* line 38, ../sass/_nianhuo.scss */
+#centerContent .nianhuo #nianhuoUl li a .nianhuo-action {
+  color: #ff353f;
+  font-size: 16px;
+  margin-top: 8px;
+}
+/* line 47, ../sass/_nianhuo.scss */
+#centerContent .lowPrice {
+  width: 1190px;
+  height: 330px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+}
+/* line 53, ../sass/_nianhuo.scss */
+#centerContent .lowPrice .lowleft {
+  background-color: white;
+  border-radius: 5px;
+  width: 790px;
+  height: 100%;
+}
+/* line 59, ../sass/_nianhuo.scss */
+#centerContent .lowPrice .lowleft .lowleft-title {
+  height: 46px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10px;
+}
+/* line 68, ../sass/_nianhuo.scss */
+#centerContent .lowPrice .lowright {
+  background-color: white;
+  border-radius: 5px;
+  height: 100%;
+  width: 390px;
+}
+/* line 73, ../sass/_nianhuo.scss */
+#centerContent .lowPrice .lowright .lowright-title {
+  margin: 0 10px;
+  height: 46px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 84, ../sass/_nianhuo.scss */
+#centerContent .lowleft-title .lowTl {
+  display: flex;
+}
+/* line 86, ../sass/_nianhuo.scss */
+#centerContent .lowleft-title .lowTl img {
+  margin-right: 10px;
+  height: 25px;
+  width: 91px;
+}
+/* line 91, ../sass/_nianhuo.scss */
+#centerContent .lowleft-title .lowTl em {
+  font-size: 14px;
+  color: #333;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+/* line 98, ../sass/_nianhuo.scss */
+#centerContent .lowleft-title .lowTl p span {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  border-radius: 3px;
+  background: url(../../src/images/indexSprit.png) no-repeat -460px -295px;
+}
+/* line 109, ../sass/_nianhuo.scss */
+#centerContent .lowleft-title .lowTr {
+  margin: 12px 19px 0 0;
+  font-size: 12px;
+  display: flex;
+}
+/* line 113, ../sass/_nianhuo.scss */
+#centerContent .lowleft-title .lowTr .lowTr1 {
+  width: 133px;
+  height: 24px;
+  margin-right: 19px;
+  line-height: 24px;
+  text-align: center;
+  font-size: 14px;
+  cursor: default;
+  background-image: linear-gradient(90deg, #ff6600 7%, #ff2222 97%);
+  border-radius: 31px;
+  color: #FFF;
+}
+/* line 126, ../sass/_nianhuo.scss */
+#centerContent .lowleft-title .lowTr .lowTr2 {
+  width: 133px;
+  height: 24px;
+  margin-right: 19px;
+  line-height: 24px;
+  text-align: center;
+  font-size: 14px;
+  cursor: default;
+}
+/* line 138, ../sass/_nianhuo.scss */
+#centerContent .lowPrice .condition {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 142, ../sass/_nianhuo.scss */
+#centerContent .lowPrice .condition .line {
+  display: inline-block;
+  width: 100px;
+  height: 4px;
+  background: url(../../src/images/indexSprit.png) 0 -332px;
+}
+/* line 148, ../sass/_nianhuo.scss */
+#centerContent .lowPrice .condition .line em {
+  display: block;
+  height: 100%;
+  color: #333;
+  height: 4px;
+  border-radius: 0 3px 3px 0;
+  background: url(../../src/images/indexSprit.png) -104px -332px;
+  width: 38px;
+}
+/* line 160, ../sass/_nianhuo.scss */
+#centerContent .goodsFloor {
+  width: 1190px;
+  height: 427px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+/* line 168, ../sass/_nianhuo.scss */
+#centerContent .goodsFloor .gfLi {
+  border-radius: 4px;
+  width: 390px;
+  height: 427px;
+  overflow: hidden;
+  background-color: white;
+}
+
+/* line 181, ../sass/_nianhuo.scss */
+.lowright-title .miaosha {
+  font-size: 22px;
+  width: 90px;
+  color: #333333;
+  line-height: 46px;
+}
+/* line 187, ../sass/_nianhuo.scss */
+.lowright-title .moreTag {
+  width: 50px;
+  font-size: 14px;
+  color: #999999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 195, ../sass/_nianhuo.scss */
+.lowright-title .moreTag span {
+  width: 15px;
+  height: 15px;
+  background: url(../../src/images/indexSprit.png) no-repeat -561px -36px;
+}
+
+/* line 203, ../sass/_nianhuo.scss */
+.lowRight-tab {
+  margin: 17px 20px 0;
+  width: 350px;
+  height: 175px;
+  position: relative;
+  overflow: hidden;
+}
+/* line 209, ../sass/_nianhuo.scss */
+.lowRight-tab .tabboxBig {
+  height: 175px;
+  position: absolute;
+  border-radius: 4px;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/* line 218, ../sass/_nianhuo.scss */
+.lowRight-tab .tabboxBig img {
+  width: 350px;
+  height: 175px;
+}
+/* line 222, ../sass/_nianhuo.scss */
+.lowRight-tab .tabboxBig .tabbox-wrap {
+  width: 158px;
+  height: 98px;
+  position: absolute;
+  left: 12px;
+  top: 39px;
+  border: 1px solid white;
+  border-radius: 10px 24px 10px 24px;
+}
+/* line 230, ../sass/_nianhuo.scss */
+.lowRight-tab .tabboxBig .tabbox-wrap .tabbox-inner {
+  background-color: white;
+  width: 152px;
+  height: 92px;
+  border-radius: 8px 22px 8px 22px;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* line 245, ../sass/_nianhuo.scss */
+.tabbox-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* line 249, ../sass/_nianhuo.scss */
+.tabbox-inner .desc {
+  height: 28px;
+  width: 100%;
+  line-height: 28px;
+  font-size: 20px;
+  color: #333;
+  text-align: center;
+}
+/* line 257, ../sass/_nianhuo.scss */
+.tabbox-inner .time-down {
+  height: 20px;
+  width: 100%;
+  line-height: 20px;
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+}
+/* line 264, ../sass/_nianhuo.scss */
+.tabbox-inner .time-down em {
+  line-height: 20px;
+  font-size: 14px;
+  text-align: center;
+  color: #ff2517;
+}
+
+/* line 273, ../sass/_nianhuo.scss */
+.tabboxSmall {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 12px;
+}
+/* line 277, ../sass/_nianhuo.scss */
+.tabboxSmall li {
+  border: 1px solid #f2f2f2;
+  border-radius: 4px;
+  overflow: hidden;
+}
+/* line 281, ../sass/_nianhuo.scss */
+.tabboxSmall li a {
+  display: block;
+  width: 106px;
+  height: 68px;
+}
+/* line 285, ../sass/_nianhuo.scss */
+.tabboxSmall li a img {
+  display: block;
+  width: 90px;
+  height: 46px;
+  margin: 0 9px 3px;
+}
+/* line 291, ../sass/_nianhuo.scss */
+.tabboxSmall li a p {
+  color: #333;
+  height: 14px;
+  line-height: 14px;
+  font-size: 14px;
+  text-align: center;
+  overflow: hidden;
+  font-weight: 300;
+}
+
+/* line 305, ../sass/_nianhuo.scss */
+.gfLi .gfLi-title {
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 5px;
+}
+/* line 311, ../sass/_nianhuo.scss */
+.gfLi .gfLi-title .titlecontent {
+  font-size: 18px;
+  font-weight: 900;
+  padding-left: 15px;
+}
+/* line 316, ../sass/_nianhuo.scss */
+.gfLi .gfLi-title .moreTag {
+  width: 50px;
+  font-size: 14px;
+  color: #999999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 323, ../sass/_nianhuo.scss */
+.gfLi .gfLi-title .moreTag span {
+  color: #999999;
+  width: 15px;
+  height: 15px;
+  background: url(../../src/images/indexSprit.png) no-repeat -561px -36px;
+}
+
+/* line 333, ../sass/_nianhuo.scss */
+.goodsFloor1 {
+  position: relative;
+  overflow: hidden;
+}
+/* line 336, ../sass/_nianhuo.scss */
+.goodsFloor1 .floor1Ul {
+  display: flex;
+  width: 1170px;
+  height: 382px;
+}
+/* line 340, ../sass/_nianhuo.scss */
+.goodsFloor1 .floor1Ul .floor1Li {
+  width: 350px;
+  padding: 15px 20px;
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+}
+/* line 346, ../sass/_nianhuo.scss */
+.goodsFloor1 .floor1Ul .floor1Li .floor1Li-inner {
+  height: 244px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* line 351, ../sass/_nianhuo.scss */
+.goodsFloor1 .floor1Ul .floor1Li .floor1Li-inner img {
+  width: 350px;
+  height: 150px;
+}
+/* line 355, ../sass/_nianhuo.scss */
+.goodsFloor1 .floor1Ul .floor1Li .floor1Li-inner em {
+  line-height: 21px;
+  font-size: 18px;
+  overflow: hidden;
+  height: 21px;
+  width: 350px;
+  text-align: center;
+  margin-top: 14px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #222;
+}
+/* line 367, ../sass/_nianhuo.scss */
+.goodsFloor1 .floor1Ul .floor1Li .floor1Li-inner i {
+  font-size: 14px;
+  color: #999;
+  line-height: 20px;
+  height: 40px;
+  overflow: hidden;
+  margin: 8px 0 11px 0;
+  text-overflow: ellipsis;
+}
+/* line 377, ../sass/_nianhuo.scss */
+.goodsFloor1 .floor1Ul .floor1Li .f1-below {
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+}
+/* line 381, ../sass/_nianhuo.scss */
+.goodsFloor1 .floor1Ul .floor1Li .f1-below img {
+  width: 100px;
+  height: 100px;
+}
+
+/* line 390, ../sass/_nianhuo.scss */
+.gfrightarrow,
+.gfleftarrow {
+  width: 24px;
+  height: 60px;
+  color: #333;
+  position: absolute;
+  top: 50%;
+  display: block;
+}
+
+/* line 400, ../sass/_nianhuo.scss */
+.gfrightarrow {
+  left: 0;
+  transform: translateY(-50%);
+  background: url("../../src/images/indexSprit.png");
+  background-position: -561px -117px;
+}
+
+/* line 407, ../sass/_nianhuo.scss */
+.gfleftarrow {
+  right: 0;
+  transform: translateY(-50%);
+  background: url("../../src/images/indexSprit.png");
+  background-position: -599px -117px;
+}
+
+/* line 414, ../sass/_nianhuo.scss */
+.showbox {
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 419, ../sass/_nianhuo.scss */
+.f1-belowUl {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+  display: flex;
+}
+/* line 425, ../sass/_nianhuo.scss */
+.f1-belowUl li {
+  width: 12px;
+  height: 6px;
+  margin: 0 5px;
+  border-radius: 3px;
+  background-color: #69A88F;
+}
+
+/* line 435, ../sass/_nianhuo.scss */
+.goodsFloor2 .f2box {
+  height: 379px;
+  overflow: hidden;
+}
+/* line 439, ../sass/_nianhuo.scss */
+.goodsFloor2 .f2box .f2Ul {
+  margin: 8px 10px 0;
+  width: 371px;
+  height: 363px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: space-between;
+  background-color: #f2f2f2;
+}
+
+/* line 452, ../sass/_nianhuo.scss */
+.f2Ul-item {
+  width: 185px;
+  height: 181px;
+  background-color: white;
+}
+/* line 456, ../sass/_nianhuo.scss */
+.f2Ul-item .f2-itemA {
+  width: 100%;
+  display: block;
+}
+/* line 459, ../sass/_nianhuo.scss */
+.f2Ul-item .f2-itemA p {
+  text-align: center;
+  position: relative;
+  float: left;
+  height: 22px;
+  margin: 15px 0 0 9px;
+  padding: 0 8px 0 14px;
+  background: #ff9902;
+  background-image: linear-gradient(-90deg, #ffc36c 0%, #ff9902 100%);
+  border-radius: 20px;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+/* line 476, ../sass/_nianhuo.scss */
+.f2Ul-item .f2-itemA p i {
+  position: absolute;
+  left: 5px;
+  top: 9px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: white;
+}
+/* line 486, ../sass/_nianhuo.scss */
+.f2Ul-item .f2-itemA span {
+  width: 144px;
+  height: 16px;
+  text-align: left;
+  color: #999;
+  margin: 6px 0 5px 16px;
+  font-size: 12px;
+  float: left;
+}
+/* line 496, ../sass/_nianhuo.scss */
+.f2Ul-item .f2-itema {
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+/* line 501, ../sass/_nianhuo.scss */
+.f2Ul-item .f2-itema:hover .popup {
+  top: 0;
+}
+/* line 504, ../sass/_nianhuo.scss */
+.f2Ul-item .f2-itema img {
+  display: block;
+  width: 90px;
+  height: 90px;
+}
+/* line 509, ../sass/_nianhuo.scss */
+.f2Ul-item .f2-itema .popup {
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  top: 90px;
+  left: 0px;
+  transition: all 0.5s;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+/* line 518, ../sass/_nianhuo.scss */
+.f2Ul-item .f2-itema .popup .enterIn {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  font-size: 12px;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 48px;
+  height: 18px;
+  padding: 0 9px;
+  color: #FFF;
+  background: #f67f7e;
+  border-radius: 9px;
+  line-height: 18px;
+  background-image: linear-gradient(90deg, #f67f7e 0%, #dd5352 100%);
+}
+
+/* line 541, ../sass/_nianhuo.scss */
+.goodsFloor3 .content {
+  height: 380px;
+  overflow: hidden;
+}
+/* line 545, ../sass/_nianhuo.scss */
+.goodsFloor3 .content .contentwrap {
+  border-bottom: 1px solid #ccc;
+  width: 370px;
+  height: 40px;
+  margin: 0 10px;
+  overflow: hidden;
+}
+/* line 551, ../sass/_nianhuo.scss */
+.goodsFloor3 .content .contentwrap .contentlist {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  height: 100%;
+  width: 550px;
+}
+/* line 557, ../sass/_nianhuo.scss */
+.goodsFloor3 .content .contentwrap .contentlist li {
+  margin: 0 5px;
+  width: 70px;
+  height: 24px;
+  padding: 0 10px;
+  text-align: center;
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #333;
+}
+
+/* line 575, ../sass/_nianhuo.scss */
+.ullist-item {
+  width: 350px;
+  height: 327px;
+  margin: 12px 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+/* line 581, ../sass/_nianhuo.scss */
+.ullist-item li {
+  margin-bottom: 19px;
+}
+/* line 583, ../sass/_nianhuo.scss */
+.ullist-item li a {
+  width: 350px;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+}
+/* line 588, ../sass/_nianhuo.scss */
+.ullist-item li a img {
+  width: 90px;
+  height: 90px;
+}
+/* line 592, ../sass/_nianhuo.scss */
+.ullist-item li a .right-content {
+  width: 240px;
+}
+/* line 594, ../sass/_nianhuo.scss */
+.ullist-item li a .right-content .name {
+  font-size: 12px;
+  color: #333;
+  height: 36px;
+  margin-top: 10px;
+  line-height: 18px;
+  overflow: hidden;
+}
+/* line 602, ../sass/_nianhuo.scss */
+.ullist-item li a .right-content .price {
+  font-size: 14px;
+  color: #db5757;
+  line-height: 20px;
+  margin-top: 10px;
+}
+
+/* line 613, ../sass/_nianhuo.scss */
+#youpin {
+  width: 1190px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+/* line 617, ../sass/_nianhuo.scss */
+#youpin .youpinbox {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+/* line 624, ../sass/_nianhuo.scss */
+#youpin .youpinbox .youpinLi {
+  box-sizing: border-box;
+  width: 290px;
+  height: 260px;
+  border-radius: 4px;
+  background-color: white;
+}
+
+/* line 635, ../sass/_nianhuo.scss */
+.youpinLink {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+}
+/* line 640, ../sass/_nianhuo.scss */
+.youpinLink .ypPic1 {
+  width: 270px;
+  height: 240px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+/* line 648, ../sass/_nianhuo.scss */
+.youpinLink .ypPic2 {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
+}
+/* line 656, ../sass/_nianhuo.scss */
+.youpinLink .ypText {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  width: 270px;
+  height: 68px;
+}
+/* line 662, ../sass/_nianhuo.scss */
+.youpinLink .ypText em {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  color: #FFF;
+  height: 26px;
+  line-height: 26px;
+  font-size: 20px;
+  margin-top: 4px;
+}
+/* line 673, ../sass/_nianhuo.scss */
+.youpinLink .ypText p {
+  display: block;
+  height: 2px;
+  background: #FFF;
+  width: 40px;
+  margin: 6px auto 0;
+}
+/* line 680, ../sass/_nianhuo.scss */
+.youpinLink .ypText i {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  color: #FFF;
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+/* line 694, ../sass/_nianhuo.scss */
+.youpinOnly {
+  height: 100%;
+  display: flex;
+}
+/* line 697, ../sass/_nianhuo.scss */
+.youpinOnly .leftshow {
+  width: 424px;
+  height: 240px;
+  overflow: hidden;
+  margin: 10px;
+}
+/* line 705, ../sass/_nianhuo.scss */
+.youpinOnly .leftshow .leftpics li {
+  height: 100%;
+}
+/* line 707, ../sass/_nianhuo.scss */
+.youpinOnly .leftshow .leftpics li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+}
+/* line 715, ../sass/_nianhuo.scss */
+.youpinOnly .leftshow .leftpics li a img {
+  height: 100%;
+  width: 100%;
+}
+/* line 719, ../sass/_nianhuo.scss */
+.youpinOnly .leftshow .leftpics li a em {
+  color: #F60;
+  position: absolute;
+  background: url(../../src/images/indexSprit.png) -670px -222px;
+  width: 80px;
+  height: 24px;
+  top: 20px;
+  left: 20px;
+}
+/* line 728, ../sass/_nianhuo.scss */
+.youpinOnly .leftshow .leftpics li a i {
+  color: #333;
+  position: absolute;
+  display: block;
+  background: url(../../src/images/indexSprit.png) -700px 0;
+  top: 95px;
+  left: 187px;
+  width: 50px;
+  height: 50px;
+}
+/* line 737, ../sass/_nianhuo.scss */
+.youpinOnly .leftshow .leftpics li a i:hover {
+  background: url(../../src/images/indexSprit.png) -700px -56px;
+}
+/* line 741, ../sass/_nianhuo.scss */
+.youpinOnly .leftshow .leftpics li a p {
+  position: absolute;
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
+  top: 194px;
+  left: 65px;
+  font-size: 18px;
+  line-height: 24px;
+  height: 24px;
+  width: 294px;
+  font-weight: 100;
+}
+/* line 760, ../sass/_nianhuo.scss */
+.youpinOnly .rightpics {
+  margin-top: 10px;
+  width: 136px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* line 767, ../sass/_nianhuo.scss */
+.youpinOnly .rightpics li {
+  width: 100%;
+}
+/* line 769, ../sass/_nianhuo.scss */
+.youpinOnly .rightpics li a {
+  width: 100%;
+  height: 76px;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  border-radius: 4px;
+}
+/* line 776, ../sass/_nianhuo.scss */
+.youpinOnly .rightpics li a img {
+  width: 100%;
+  height: 100%;
+}
+/* line 780, ../sass/_nianhuo.scss */
+.youpinOnly .rightpics li a i {
+  color: #333;
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: url(../../src/images/indexSprit.png) -700px -115px;
+  top: 28px;
+  left: 58px;
+}
+/* line 789, ../sass/_nianhuo.scss */
+.youpinOnly .rightpics li a i:hover {
+  background: url(../../src/images/indexSprit.png) -700px -139px;
+}
+/* line 793, ../sass/_nianhuo.scss */
+.youpinOnly .rightpics li a p {
+  position: absolute;
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  top: 57px;
+  left: 5px;
+  line-height: 16px;
+  height: 16px;
+  width: 125px;
+  font-size: 12px;
+  font-weight: 100;
+}
+
+/* line 812, ../sass/_nianhuo.scss */
+#stairs {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 1000;
+  right: auto;
+  margin-left: -670px;
+  margin-top: -150px;
+  display: block;
+  background-color: #f8f8f8;
+}
+/* line 822, ../sass/_nianhuo.scss */
+#stairs .stairsImg {
+  position: absolute;
+  width: 45px;
+  height: 37px;
+  left: 13px;
+  top: -29px;
+  z-index: 1;
+  background: url(../../src/images/indexSprit.png) -302px -80px;
+}
+/* line 831, ../sass/_nianhuo.scss */
+#stairs .stairsUl {
+  padding-top: 10px;
+  border: 1px solid #ddd;
+}
+/* line 834, ../sass/_nianhuo.scss */
+#stairs .stairsUl li {
+  width: 68px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  font-size: 12px;
+  color: #333;
+  border-bottom: 1px solid #e8e8e8;
+}
+/* line 843, ../sass/_nianhuo.scss */
+#stairs .stairsUl .show {
+  background-color: #f90;
+}
+
+/* line 1, ../sass/_main.scss */
+#maincontent {
+  padding-top: 20px;
+  background-color: #eee;
+}
+/* line 4, ../sass/_main.scss */
+#maincontent .main-contentl, #maincontent .main-contents {
+  width: 1190px;
+  box-sizing: border-box;
+  margin: 30px auto 0;
+  display: flex;
+  justify-content: space-between;
+}
+/* line 11, ../sass/_main.scss */
+#maincontent .main-contentl .mainContentLeft, #maincontent .main-contentl .mainContentRight, #maincontent .main-contents .mainContentLeft, #maincontent .main-contents .mainContentRight {
+  width: 590px;
+  height: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: white;
+}
+/* line 17, ../sass/_main.scss */
+#maincontent .main-contentl .mainContentLeft .title, #maincontent .main-contentl .mainContentRight .title, #maincontent .main-contents .mainContentLeft .title, #maincontent .main-contents .mainContentRight .title {
+  padding-right: 18px;
+  height: 47px;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: space-between;
+}
+/* line 23, ../sass/_main.scss */
+#maincontent .main-contentl .mainContentLeft .title .titleleft, #maincontent .main-contentl .mainContentLeft .title .titleright, #maincontent .main-contentl .mainContentRight .title .titleleft, #maincontent .main-contentl .mainContentRight .title .titleright, #maincontent .main-contents .mainContentLeft .title .titleleft, #maincontent .main-contents .mainContentLeft .title .titleright, #maincontent .main-contents .mainContentRight .title .titleleft, #maincontent .main-contents .mainContentRight .title .titleright {
+  display: flex;
+  align-items: center;
+}
+/* line 31, ../sass/_main.scss */
+#maincontent .main-contentl {
+  height: 565px;
+}
+/* line 34, ../sass/_main.scss */
+#maincontent .main-contents {
+  height: 455px;
+}
+/* line 39, ../sass/_main.scss */
+#maincontent .advert2 {
+  width: 1190px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+/* line 46, ../sass/_main.scss */
+#maincontent .advert2 a img {
+  width: 396px;
+  height: 100px;
+}
+/* line 56, ../sass/_main.scss */
+#maincontent .main1 .title .titleleft em, #maincontent .main2 .title .titleleft em, #maincontent .main3 .title .titleleft em, #maincontent .main4 .title .titleleft em, #maincontent .main5 .title .titleleft em, #maincontent .main6 .title .titleleft em {
+  width: 4px;
+  height: 20px;
+  background-color: black;
+  margin-right: 18px;
+}
+/* line 62, ../sass/_main.scss */
+#maincontent .main1 .title .titleleft i, #maincontent .main2 .title .titleleft i, #maincontent .main3 .title .titleleft i, #maincontent .main4 .title .titleleft i, #maincontent .main5 .title .titleleft i, #maincontent .main6 .title .titleleft i {
+  font-size: 18px;
+  font-weight: bolder;
+  margin-right: 18px;
+  color: black;
+}
+/* line 68, ../sass/_main.scss */
+#maincontent .main1 .title .titleleft img, #maincontent .main2 .title .titleleft img, #maincontent .main3 .title .titleleft img, #maincontent .main4 .title .titleleft img, #maincontent .main5 .title .titleleft img, #maincontent .main6 .title .titleleft img {
+  width: 18px;
+  height: 18px;
+}
+/* line 74, ../sass/_main.scss */
+#maincontent .main1 .title .titleright li, #maincontent .main2 .title .titleright li, #maincontent .main3 .title .titleright li, #maincontent .main4 .title .titleright li, #maincontent .main5 .title .titleright li, #maincontent .main6 .title .titleright li {
+  height: 20px;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+/* line 79, ../sass/_main.scss */
+#maincontent .main1 .title .titleright li a, #maincontent .main2 .title .titleright li a, #maincontent .main3 .title .titleright li a, #maincontent .main4 .title .titleright li a, #maincontent .main5 .title .titleright li a, #maincontent .main6 .title .titleright li a {
+  color: #666666;
+  line-height: 20px;
+  font-size: 14px;
+}
+/* line 83, ../sass/_main.scss */
+#maincontent .main1 .title .titleright li a:hover, #maincontent .main2 .title .titleright li a:hover, #maincontent .main3 .title .titleright li a:hover, #maincontent .main4 .title .titleright li a:hover, #maincontent .main5 .title .titleright li a:hover, #maincontent .main6 .title .titleright li a:hover {
+  color: #f90;
+}
+/* line 91, ../sass/_main.scss */
+#maincontent .main1 .content, #maincontent .main2 .content, #maincontent .main3 .content, #maincontent .main4 .content, #maincontent .main5 .content, #maincontent .main6 .content {
+  width: 100%;
+  height: calc(100% - 47px);
+  background-color: #eee;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+/* line 102, ../sass/_main.scss */
+#maincontent .main1 .content .leftpart, #maincontent .main2 .content .leftpart, #maincontent .main3 .content .leftpart, #maincontent .main4 .content .leftpart, #maincontent .main5 .content .leftpart, #maincontent .main6 .content .leftpart {
+  width: 190px;
+  height: 360px;
+  position: relative;
+}
+/* line 106, ../sass/_main.scss */
+#maincontent .main1 .content .leftpart a, #maincontent .main2 .content .leftpart a, #maincontent .main3 .content .leftpart a, #maincontent .main4 .content .leftpart a, #maincontent .main5 .content .leftpart a, #maincontent .main6 .content .leftpart a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+/* line 116, ../sass/_main.scss */
+#maincontent .main1 .content .leftpart:hover a, #maincontent .main2 .content .leftpart:hover a, #maincontent .main3 .content .leftpart:hover a, #maincontent .main4 .content .leftpart:hover a, #maincontent .main5 .content .leftpart:hover a, #maincontent .main6 .content .leftpart:hover a {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+/* line 120, ../sass/_main.scss */
+#maincontent .main1 .content .leftpart img, #maincontent .main2 .content .leftpart img, #maincontent .main3 .content .leftpart img, #maincontent .main4 .content .leftpart img, #maincontent .main5 .content .leftpart img, #maincontent .main6 .content .leftpart img {
+  width: 100%;
+  height: 100%;
+}
+/* line 127, ../sass/_main.scss */
+#maincontent .main1 .content .leftpart .text, #maincontent .main2 .content .leftpart .text, #maincontent .main3 .content .leftpart .text, #maincontent .main4 .content .leftpart .text, #maincontent .main5 .content .leftpart .text, #maincontent .main6 .content .leftpart .text {
+  border-radius: 0 8px 8px 0;
+  position: absolute;
+  width: 145px;
+  height: 60px;
+  z-index: 11;
+  padding-left: 15px;
+  left: 0;
+  bottom: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0 8px 8px 0;
+}
+/* line 140, ../sass/_main.scss */
+#maincontent .main1 .content .leftpart .text .text1, #maincontent .main2 .content .leftpart .text .text1, #maincontent .main3 .content .leftpart .text .text1, #maincontent .main4 .content .leftpart .text .text1, #maincontent .main5 .content .leftpart .text .text1, #maincontent .main6 .content .leftpart .text .text1 {
+  height: 36px;
+  overflow: hidden;
+  color: #FFF;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: bolder;
+}
+/* line 148, ../sass/_main.scss */
+#maincontent .main1 .content .leftpart .text .text2, #maincontent .main2 .content .leftpart .text .text2, #maincontent .main3 .content .leftpart .text .text2, #maincontent .main4 .content .leftpart .text .text2, #maincontent .main5 .content .leftpart .text .text2, #maincontent .main6 .content .leftpart .text .text2 {
+  color: #FFF;
+  height: 24px;
+  line-height: 24px;
+  font-size: 12px;
+}
+/* line 157, ../sass/_main.scss */
+#maincontent .main1 .content .rightpart, #maincontent .main2 .content .rightpart, #maincontent .main3 .content .rightpart, #maincontent .main4 .content .rightpart, #maincontent .main5 .content .rightpart, #maincontent .main6 .content .rightpart {
+  width: 400px;
+  height: 360px;
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+/* line 165, ../sass/_main.scss */
+#maincontent .main1 .content .rightpart li, #maincontent .main2 .content .rightpart li, #maincontent .main3 .content .rightpart li, #maincontent .main4 .content .rightpart li, #maincontent .main5 .content .rightpart li, #maincontent .main6 .content .rightpart li {
+  height: 179px;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+}
+/* line 169, ../sass/_main.scss */
+#maincontent .main1 .content .rightpart li a, #maincontent .main2 .content .rightpart li a, #maincontent .main3 .content .rightpart li a, #maincontent .main4 .content .rightpart li a, #maincontent .main5 .content .rightpart li a, #maincontent .main6 .content .rightpart li a {
+  display: block;
+  width: 199px;
+  height: 179px;
+  overflow: hidden;
+}
+/* line 174, ../sass/_main.scss */
+#maincontent .main1 .content .rightpart li a img, #maincontent .main2 .content .rightpart li a img, #maincontent .main3 .content .rightpart li a img, #maincontent .main4 .content .rightpart li a img, #maincontent .main5 .content .rightpart li a img, #maincontent .main6 .content .rightpart li a img {
+  display: block;
+  margin: 0 auto;
+  width: 110px;
+  height: 110px;
+  transition: all 0.5s;
+}
+/* line 181, ../sass/_main.scss */
+#maincontent .main1 .content .rightpart li a:hover img, #maincontent .main2 .content .rightpart li a:hover img, #maincontent .main3 .content .rightpart li a:hover img, #maincontent .main4 .content .rightpart li a:hover img, #maincontent .main5 .content .rightpart li a:hover img, #maincontent .main6 .content .rightpart li a:hover img {
+  transform: scale(1.05);
+}
+/* line 184, ../sass/_main.scss */
+#maincontent .main1 .content .rightpart li a em, #maincontent .main2 .content .rightpart li a em, #maincontent .main3 .content .rightpart li a em, #maincontent .main4 .content .rightpart li a em, #maincontent .main5 .content .rightpart li a em, #maincontent .main6 .content .rightpart li a em {
+  width: 180px;
+  height: 24px;
+  text-align: center;
+  margin: 14px auto 0;
+  color: #333;
+  font-size: 16px;
+  display: block;
+}
+/* line 193, ../sass/_main.scss */
+#maincontent .main1 .content .rightpart li a i, #maincontent .main2 .content .rightpart li a i, #maincontent .main3 .content .rightpart li a i, #maincontent .main4 .content .rightpart li a i, #maincontent .main5 .content .rightpart li a i, #maincontent .main6 .content .rightpart li a i {
+  width: 180px;
+  height: 20px;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  color: #33AE75;
+  font-size: 12px;
+  font-weight: 300;
+}
+/* line 208, ../sass/_main.scss */
+#maincontent .main1 .content .midpart, #maincontent .main2 .content .midpart, #maincontent .main3 .content .midpart, #maincontent .main4 .content .midpart, #maincontent .main5 .content .midpart, #maincontent .main6 .content .midpart {
+  width: 100%;
+  height: 109px;
+  display: flex;
+  justify-content: space-between;
+}
+/* line 215, ../sass/_main.scss */
+#maincontent .main1 .content .midpart li, #maincontent .main2 .content .midpart li, #maincontent .main3 .content .midpart li, #maincontent .main4 .content .midpart li, #maincontent .main5 .content .midpart li, #maincontent .main6 .content .midpart li {
+  background-color: #FFF;
+}
+/* line 217, ../sass/_main.scss */
+#maincontent .main1 .content .midpart li a, #maincontent .main2 .content .midpart li a, #maincontent .main3 .content .midpart li a, #maincontent .main4 .content .midpart li a, #maincontent .main5 .content .midpart li a, #maincontent .main6 .content .midpart li a {
+  display: block;
+  height: 109px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+/* line 223, ../sass/_main.scss */
+#maincontent .main1 .content .midpart li a em, #maincontent .main2 .content .midpart li a em, #maincontent .main3 .content .midpart li a em, #maincontent .main4 .content .midpart li a em, #maincontent .main5 .content .midpart li a em, #maincontent .main6 .content .midpart li a em {
+  display: block;
+  width: 70px;
+  color: #333;
+  height: 24px;
+  margin-top: 27px;
+  padding-left: 20px;
+  font-size: 14px;
+}
+/* line 232, ../sass/_main.scss */
+#maincontent .main1 .content .midpart li a i, #maincontent .main2 .content .midpart li a i, #maincontent .main3 .content .midpart li a i, #maincontent .main4 .content .midpart li a i, #maincontent .main5 .content .midpart li a i, #maincontent .main6 .content .midpart li a i {
+  display: block;
+  width: 72px;
+  height: 22px;
+  padding-left: 20px;
+  overflow: hidden;
+  font-size: 14px;
+  color: #33AE75;
+}
+/* line 241, ../sass/_main.scss */
+#maincontent .main1 .content .midpart li a img, #maincontent .main2 .content .midpart li a img, #maincontent .main3 .content .midpart li a img, #maincontent .main4 .content .midpart li a img, #maincontent .main5 .content .midpart li a img, #maincontent .main6 .content .midpart li a img {
+  display: block;
+  color: #333;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 80px;
+  height: 80px;
+  transition: all 0.5s;
+  z-index: 99;
+}
+/* line 252, ../sass/_main.scss */
+#maincontent .main1 .content .midpart li a:hover img, #maincontent .main2 .content .midpart li a:hover img, #maincontent .main3 .content .midpart li a:hover img, #maincontent .main4 .content .midpart li a:hover img, #maincontent .main5 .content .midpart li a:hover img, #maincontent .main6 .content .midpart li a:hover img {
+  transform: scale(1.05);
+}
+/* line 259, ../sass/_main.scss */
+#maincontent .main1 .content .belowpart, #maincontent .main2 .content .belowpart, #maincontent .main3 .content .belowpart, #maincontent .main4 .content .belowpart, #maincontent .main5 .content .belowpart, #maincontent .main6 .content .belowpart {
+  width: 100%;
+  height: 47px;
+  background-color: #FFF;
+  margin-top: 1px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+/* line 268, ../sass/_main.scss */
+#maincontent .main1 .content .belowpart li a, #maincontent .main2 .content .belowpart li a, #maincontent .main3 .content .belowpart li a, #maincontent .main4 .content .belowpart li a, #maincontent .main5 .content .belowpart li a, #maincontent .main6 .content .belowpart li a {
+  display: block;
+}
+/* line 272, ../sass/_main.scss */
+#maincontent .main1 .content .belowpart li a img, #maincontent .main2 .content .belowpart li a img, #maincontent .main3 .content .belowpart li a img, #maincontent .main4 .content .belowpart li a img, #maincontent .main5 .content .belowpart li a img, #maincontent .main6 .content .belowpart li a img {
+  display: block;
+  width: 80px;
+  height: 30px;
+}
+/* line 284, ../sass/_main.scss */
+#maincontent .advert3 {
+  width: 1190px;
+  display: block;
+  margin: 20px auto 0;
+}
+/* line 288, ../sass/_main.scss */
+#maincontent .advert3 img {
+  width: 100%;
+  height: 90px;
+  display: block;
+}
+/* line 297, ../sass/_main.scss */
+#maincontent .advert4 {
+  width: 1190px;
+  height: 100px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+}
+/* line 304, ../sass/_main.scss */
+#maincontent .advert4 a img {
+  width: 396px;
+  height: 100px;
+}
+/* line 313, ../sass/_main.scss */
+#maincontent .advert5 {
+  width: 1190px;
+  display: block;
+  margin: 20px auto 0;
+}
+/* line 317, ../sass/_main.scss */
+#maincontent .advert5 img {
+  width: 100%;
+  height: 90px;
+  display: block;
+}
+
+/* line 1, ../sass/_recommend.scss */
+#recoBox {
+  width: 1190px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+/* line 6, ../sass/_recommend.scss */
+#recoBox .reco-title h5 {
+  height: 22px;
+  line-height: 22px;
+  padding-left: 12px;
+  border-left: 3px solid #fe9901;
+}
+/* line 13, ../sass/_recommend.scss */
+#recoBox .reco-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+/* line 17, ../sass/_recommend.scss */
+#recoBox .reco-content li {
+  box-sizing: border-box;
+  margin-bottom: 1px;
+  width: 237px;
+  height: 340px;
+  background-color: white;
+}
+/* line 24, ../sass/_recommend.scss */
+#recoBox .reco-content li a {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+}
+/* line 28, ../sass/_recommend.scss */
+#recoBox .reco-content li a:hover img {
+  transform: scale(1.05);
+}
+/* line 31, ../sass/_recommend.scss */
+#recoBox .reco-content li a:hover .reco-desc {
+  color: #f90;
+}
+/* line 34, ../sass/_recommend.scss */
+#recoBox .reco-content li a img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: 20px 18.5px 0;
+  transition: all 0.5s;
+}
+/* line 41, ../sass/_recommend.scss */
+#recoBox .reco-content li a .reco-desc {
+  color: #333;
+  height: 40px;
+  margin: 15px auto 5px;
+  overflow: hidden;
+  font-size: 12px;
+  word-break: break-all;
+  line-height: 20px;
+  width: 193px;
+}
+/* line 52, ../sass/_recommend.scss */
+#recoBox .reco-content li a .price {
+  margin-left: 20px;
+  color: #F60;
+  font-size: 16px;
+  font-weight: 900;
+}
+/* line 61, ../sass/_recommend.scss */
+#recoBox .recoEnd {
+  position: relative;
+  width: 112px;
+  height: 22px;
+  text-align: center;
+  color: #CCC;
+  margin: 15px auto;
+  font-size: 18px;
+}
+/* line 69, ../sass/_recommend.scss */
+#recoBox .recoEnd .endleft {
+  position: absolute;
+  top: 11px;
+  width: 97px;
+  height: 1px;
+  background: #CCC;
+  left: -97px;
+}
+/* line 77, ../sass/_recommend.scss */
+#recoBox .recoEnd .endright {
+  position: absolute;
+  top: 11px;
+  width: 97px;
+  height: 1px;
+  background: #CCC;
+  right: -97px;
+}
+
+/* line 88, ../sass/_recommend.scss */
+#floatAd {
+  width: 1232px;
+  height: 100px;
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  z-index: 100;
+}
