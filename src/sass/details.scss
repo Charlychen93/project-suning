@@ -1,0 +1,64 @@
+@charset 'utf-8';
+@import 'compass/reset';
+@import 'compass/css3';
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+%clearfix {
+    &:after {
+        content: '.';
+        display: block;
+        visibility: hidden;
+        overflow: hidden;
+        clear: both;
+    }
+}
+
+$innerwidth:1190px;
+$commoncolor:#f90;
+.details-content {
+    width: $innerwidth;
+    margin: 10px auto;
+    display: flex;
+    @extend %clearfix;
+    border: 1px solid black;
+    .details-xt {
+        width: 400px;
+        height: 400px;
+        position: relative;
+        overflow: hidden;
+        border: 1px solid black;
+        box-sizing: border-box;
+        .details-xf {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            border: 1px solid #aaa;
+            cursor: move;
+            background-color: #fede4f;
+            opacity: 0.5;
+        }
+        .details-df {
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            left: 400px;
+            top: 0;
+            overflow: hidden;
+            border: 1px solid black;
+            box-sizing: border-box;
+            .details-dt {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+    }
+}

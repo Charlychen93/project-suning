@@ -1,79 +1,4 @@
-/* line 5, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-
-/* line 22, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-html {
-  line-height: 1;
-}
-
-/* line 24, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
-  list-style: none;
-}
-
-/* line 26, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* line 28, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-/* line 30, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
-  quotes: none;
-}
-/* line 103, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-/* line 32, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-a img {
-  border: none;
-}
-
-/* line 116, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block;
-}
-
-/* line 4, ../sass/login.scss */
-a {
-  text-decoration: none;
-}
-
-/* line 8, ../sass/login.scss */
-li {
-  list-style: none;
-}
-
-/* line 14, ../sass/login.scss */
+/* line 12, ../sass/login.scss */
 header {
   width: 970px;
   margin: 0 auto;
@@ -82,12 +7,12 @@ header {
   align-items: center;
   justify-content: space-between;
 }
-/* line 22, ../sass/login.scss */
+/* line 20, ../sass/login.scss */
 header a img {
   width: 189px;
   height: 100px;
 }
-/* line 27, ../sass/login.scss */
+/* line 25, ../sass/login.scss */
 header p {
   color: #333;
   background: #fefff1;
@@ -97,12 +22,12 @@ header p {
   font-size: 12px;
 }
 
-/* line 37, ../sass/login.scss */
+/* line 35, ../sass/login.scss */
 section {
   width: 100%;
   background: url(https://image.suning.cn/uimg/cms/img/157900454746023629.jpg) no-repeat center;
 }
-/* line 40, ../sass/login.scss */
+/* line 38, ../sass/login.scss */
 section div {
   width: 970px;
   height: 570px;
@@ -110,25 +35,25 @@ section div {
   display: flex;
   justify-content: space-between;
 }
-/* line 46, ../sass/login.scss */
+/* line 44, ../sass/login.scss */
 section div a {
   width: 570px;
   height: 570px;
 }
-/* line 50, ../sass/login.scss */
+/* line 48, ../sass/login.scss */
 section div form {
   width: 360px;
   background-color: #fff;
   margin-top: 50px;
 }
 
-/* line 58, ../sass/login.scss */
+/* line 56, ../sass/login.scss */
 form {
   overflow: hidden;
   height: 400px;
   border-radius: 4px;
 }
-/* line 62, ../sass/login.scss */
+/* line 60, ../sass/login.scss */
 form .formp1 {
   border-bottom: 1px solid #cccccc;
   height: 50px;
@@ -137,7 +62,7 @@ form .formp1 {
   align-items: center;
   margin-bottom: 40px;
 }
-/* line 69, ../sass/login.scss */
+/* line 67, ../sass/login.scss */
 form .formp1 a {
   width: 179px;
   height: 100%;
@@ -147,11 +72,11 @@ form .formp1 a {
   text-align: center;
   line-height: 50px;
 }
-/* line 78, ../sass/login.scss */
+/* line 76, ../sass/login.scss */
 form .formp1 span {
   color: #cccccc;
 }
-/* line 82, ../sass/login.scss */
+/* line 80, ../sass/login.scss */
 form .username {
   height: 36px;
   width: 310px;
@@ -164,7 +89,7 @@ form .username {
   font-size: 14px;
   margin-bottom: 30px;
 }
-/* line 94, ../sass/login.scss */
+/* line 92, ../sass/login.scss */
 form .password {
   height: 36px;
   width: 310px;
@@ -177,7 +102,7 @@ form .password {
   font-size: 14px;
   margin-bottom: 30px;
 }
-/* line 106, ../sass/login.scss */
+/* line 104, ../sass/login.scss */
 form .btn {
   height: 40px;
   outline: 0;
@@ -191,17 +116,17 @@ form .btn {
   text-align: center;
   color: #fff;
 }
-/* line 119, ../sass/login.scss */
+/* line 117, ../sass/login.scss */
 form .formp2 {
   text-align: center;
   margin-bottom: 30px;
 }
-/* line 122, ../sass/login.scss */
+/* line 120, ../sass/login.scss */
 form .formp2 a {
   color: #333;
   font-size: 12px;
 }
-/* line 127, ../sass/login.scss */
+/* line 125, ../sass/login.scss */
 form .formp3 {
   display: flex;
   align-items: center;
@@ -209,27 +134,27 @@ form .formp3 {
   color: #ccc;
   font-size: 14px;
 }
-/* line 133, ../sass/login.scss */
+/* line 131, ../sass/login.scss */
 form .formp3 span {
   width: 90px;
   height: 1px;
   background-color: #ccc;
 }
-/* line 139, ../sass/login.scss */
+/* line 137, ../sass/login.scss */
 form .formp4 {
   display: flex;
   align-items: center;
   padding: 0 20px;
   height: 53px;
 }
-/* line 144, ../sass/login.scss */
+/* line 142, ../sass/login.scss */
 form .formp4 a {
   color: #999;
   font-size: 12px;
   height: 16px;
   text-align: center;
 }
-/* line 150, ../sass/login.scss */
+/* line 148, ../sass/login.scss */
 form .formp4 span {
   color: #999999;
   font-size: 12px;

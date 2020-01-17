@@ -1,16 +1,15 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin'); // 通过 npm 安装
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    mode: "development", //01设置development 或者 production
-    entry: "./src/script/main.js", //02设置入口文件
-    output: { //03设置出口文件（在哪里输出bundle.js）
-        path: path.resolve(__dirname, 'dist'), //拼接路径个文件名
-        filename: "script/bundle.js" //文件名
+    mode: "development",
+    entry: "./src/script/main.js",
+    output: {
+        path: path.resolve(__dirname, 'dist'),
+        filename: "script/bundle.js"
     },
     module: {
         rules: [{
-                //加载jquery
                 test: require.resolve('jquery'),
                 use: [{
                         loader: 'expose-loader',
@@ -21,10 +20,16 @@ module.exports = {
                         options: 'jQuery'
                     }
                 ]
-            },
-            { //加载css
+            }, { //加载css
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader']
+            },
+            { //配置iconfont文件的包
+                test: /\.(woff|svg|eot|ttf)(\?.*)?$/,
+                loader: 'url-loader',
+                options: {
+                    name: 'fonts/[name].[hash:7].[ext]'
+                }
             },
             { //配置图片文件的包
                 test: /\.(png|jpg|gif|svg)$/,
@@ -58,5 +63,4 @@ module.exports = {
         })
 
     ]
-
 }

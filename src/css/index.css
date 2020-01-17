@@ -1223,7 +1223,7 @@ nav .navBox .publicity img {
 .gfrightarrow {
   left: 0;
   transform: translateY(-50%);
-  background: url("../../src/images/indexSprit.png");
+  background: url(../../src/images/indexSprit.png);
   background-position: -561px -117px;
 }
 
@@ -1231,7 +1231,7 @@ nav .navBox .publicity img {
 .gfleftarrow {
   right: 0;
   transform: translateY(-50%);
-  background: url("../../src/images/indexSprit.png");
+  background: url(../../src/images/indexSprit.png);
   background-position: -599px -117px;
 }
 
