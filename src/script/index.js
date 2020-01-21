@@ -25,7 +25,7 @@ class indexjs {
             $.each(data, (index, value) => {
                 strhtml += `
                 <li>
-                <a href="http://localhost/project-suning/src/details.html?sid=${value.sid}">
+                <a href="localhost/project-suning/src/details.html?sid=${value.sid}">
                     <img src="${value.picurl}" alt="">
                     <p class="reco-desc">${value.title}</p>
                     <p class="price">
@@ -39,12 +39,12 @@ class indexjs {
             this.renderUl.html(strhtml);
         })
 
-        $.ajax({
-            url: './footer.html',
-            type: 'get',
-        }).done((res) => {
-            $('footer').html(res);
-        })
+        // $.ajax({
+        //     url: '../footer.html',
+        //     type: 'get',
+        // }).done((res) => {
+        //     $('footer').html(res);
+        // })
 
         this.adOpen();
         this.city();
@@ -135,7 +135,7 @@ class indexjs {
         function autoplay() {
             _this.banTimer = setInterval(function() {
                 _this.banindex++;
-                console.log(_this.banindex)
+                // console.log(_this.banindex)
                 banswitch();
             }, 3000)
         }

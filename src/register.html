@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>苏宁注册界面</title>
-    <link rel="stylesheet" href="./css/register.css">
+    <title>
+        苏宁注册
+    </title>
+    <!-- <link rel="stylesheet" href="./css/register.css"> -->
 </head>
 
-<body>
-    <header>
+<body style="background-color: white;">
+    <header class="register-head">
         <a href="./index.html" class="logo">
             <img src="http://res.suning.cn/public/v3/images/logo/snlogo.png?v=2015042703" alt="">
         </a>
@@ -18,7 +20,7 @@
         我已经注册，马上登录></a>
     </header>
 
-    <section>
+    <section class="register-content">
         <p class="username"><label for="">账&emsp;号：</label>
             <input type="text" placeholder="请输入账号" class="user">
             <em></em>
@@ -48,9 +50,10 @@
         <button class="btn">提交注册</button>
 
     </section>
-    <footer>
+    <footer class="register-footer">
 
     </footer>
+    <script src="../dist/script/bundle.js" defer async="true" page="register" id="current"></script>
 
 </body>
 

@@ -1,7 +1,7 @@
 <?php
 
-header('Access-Control-Allow-Origin:*');
-header('Access-Control-Allow-Method:POST,GET');
+// header('Access-Control-Allow-Origin:*');
+// header('Access-Control-Allow-Method:POST,GET');
 
 header('content-type:text/html;charset=utf-8');
 define('HOST','127.0.0.1');

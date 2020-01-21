@@ -1,5 +1,5 @@
 /* line 12, ../sass/login.scss */
-header {
+.login-head {
   width: 970px;
   margin: 0 auto;
   height: 100px;
@@ -8,12 +8,12 @@ header {
   justify-content: space-between;
 }
 /* line 20, ../sass/login.scss */
-header a img {
+.login-head .login-link img {
   width: 189px;
   height: 100px;
 }
 /* line 25, ../sass/login.scss */
-header p {
+.login-head p {
   color: #333;
   background: #fefff1;
   border: 1px solid #fecd66;
@@ -23,12 +23,12 @@ header p {
 }
 
 /* line 35, ../sass/login.scss */
-section {
+.login-content {
   width: 100%;
   background: url(https://image.suning.cn/uimg/cms/img/157900454746023629.jpg) no-repeat center;
 }
 /* line 38, ../sass/login.scss */
-section div {
+.login-content div {
   width: 970px;
   height: 570px;
   margin: 0 auto;
@@ -36,25 +36,25 @@ section div {
   justify-content: space-between;
 }
 /* line 44, ../sass/login.scss */
-section div a {
+.login-content div a {
   width: 570px;
   height: 570px;
 }
 /* line 48, ../sass/login.scss */
-section div form {
+.login-content div form {
   width: 360px;
   background-color: #fff;
   margin-top: 50px;
 }
 
 /* line 56, ../sass/login.scss */
-form {
+.login-form {
   overflow: hidden;
   height: 400px;
   border-radius: 4px;
 }
 /* line 60, ../sass/login.scss */
-form .formp1 {
+.login-form .formp1 {
   border-bottom: 1px solid #cccccc;
   height: 50px;
   width: 100%;
@@ -63,7 +63,7 @@ form .formp1 {
   margin-bottom: 40px;
 }
 /* line 67, ../sass/login.scss */
-form .formp1 a {
+.login-form .formp1 a {
   width: 179px;
   height: 100%;
   color: #333;
@@ -73,11 +73,11 @@ form .formp1 a {
   line-height: 50px;
 }
 /* line 76, ../sass/login.scss */
-form .formp1 span {
+.login-form .formp1 span {
   color: #cccccc;
 }
 /* line 80, ../sass/login.scss */
-form .username {
+.login-form .username {
   height: 36px;
   width: 310px;
   margin: 0 auto;
@@ -90,7 +90,7 @@ form .username {
   margin-bottom: 30px;
 }
 /* line 92, ../sass/login.scss */
-form .password {
+.login-form .password {
   height: 36px;
   width: 310px;
   margin: 0 auto;
@@ -103,7 +103,7 @@ form .password {
   margin-bottom: 30px;
 }
 /* line 104, ../sass/login.scss */
-form .btn {
+.login-form .btn {
   height: 40px;
   outline: 0;
   display: block;
@@ -117,17 +117,17 @@ form .btn {
   color: #fff;
 }
 /* line 117, ../sass/login.scss */
-form .formp2 {
+.login-form .formp2 {
   text-align: center;
   margin-bottom: 30px;
 }
 /* line 120, ../sass/login.scss */
-form .formp2 a {
+.login-form .formp2 a {
   color: #333;
   font-size: 12px;
 }
 /* line 125, ../sass/login.scss */
-form .formp3 {
+.login-form .formp3 {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -135,27 +135,27 @@ form .formp3 {
   font-size: 14px;
 }
 /* line 131, ../sass/login.scss */
-form .formp3 span {
+.login-form .formp3 span {
   width: 90px;
   height: 1px;
   background-color: #ccc;
 }
 /* line 137, ../sass/login.scss */
-form .formp4 {
+.login-form .formp4 {
   display: flex;
   align-items: center;
   padding: 0 20px;
   height: 53px;
 }
 /* line 142, ../sass/login.scss */
-form .formp4 a {
+.login-form .formp4 a {
   color: #999;
   font-size: 12px;
   height: 16px;
   text-align: center;
 }
 /* line 148, ../sass/login.scss */
-form .formp4 span {
+.login-form .formp4 span {
   color: #999999;
   font-size: 12px;
   margin: 0 10px;

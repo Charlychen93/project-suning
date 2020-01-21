@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/top.css">
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
+    <!-- <link rel="stylesheet" href="./css/top.css"> -->
 </head>
 
 <body>
@@ -14,7 +16,7 @@
         <div class="loginIn">
             <div class="webguide">
                 <div class="webitem">
-                    <a href="http://localhost/project-suning/src/index1.html" class="web-itema" style="color: #f90;">
+                    <a href="./index.html" class="web-itema" style="color: #f90;">
                         <span>返回首页</span>
                     </a>
                 </div>
@@ -104,8 +106,8 @@
             </div>
             <div class="userlogin">
                 <div class="loginReg">
-                    <a href="login.html" class="web-itema">请登录</a>
-                    <a href="register.html" style="color: #f90;" class="web-itema">注册有礼</a>
+                    <a href="./login.html" class="web-itema">请登录</a>
+                    <a href="./register.html" style="color: #f90;" class="web-itema">注册有礼</a>
                 </div>
                 <div class="webitem">
                     <a href="#" class="web-itema">
@@ -155,13 +157,11 @@
                 <img src="http://image4.suning.cn/uimg/cms/img/157855089807736496.gif" alt="">
             </a>
             <div class="searchBoxL">
-                <form action="">
-                    <div class="searchBoxS">
-                        <span class="iconfont icon-weibiaoti-"></span>
-                        <input type="text" placeholder="小罐茶" class="textinput">
-                        <input type="submit" value="搜索" class="searchinput">
-                    </div>
-                </form>
+                <div class="searchBoxS">
+                    <span class="iconfont icon-weibiaoti-"></span>
+                    <input type="text" placeholder="小罐茶" class="textinput">
+                    <input type="submit" value="搜索" class="searchinput">
+                </div>
                 <div class="searchlink">
                     <a href="#">手机</a>
                     <span>|</span>
@@ -185,7 +185,7 @@
         </div>
     </div>
 
-
+    <script src="../dist/script/bundle.js" defer async="true"></script>
 </body>
 
 </html>

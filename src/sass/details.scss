@@ -1,14 +1,12 @@
-@charset 'utf-8';
-@import 'compass/reset';
-@import 'compass/css3';
-a {
-    text-decoration: none;
-}
-
-li {
-    list-style: none;
-}
-
+// @charset 'utf-8';
+// @import 'compass/reset';
+// @import 'compass/css3';
+// a {
+//     text-decoration: none;
+// }
+// li {
+//     list-style: none;
+// }
 %clearfix {
     &:after {
         content: '.';
@@ -25,15 +23,19 @@ $commoncolor:#f90;
     width: $innerwidth;
     margin: 10px auto;
     display: flex;
+    justify-content: space-between;
     @extend %clearfix;
-    border: 1px solid black;
+}
+
+.details-render {
+    width: 400px;
     .details-xt {
         width: 400px;
         height: 400px;
         position: relative;
         overflow: hidden;
-        border: 1px solid black;
         box-sizing: border-box;
+        border: 1px solid black;
         .details-xf {
             width: 200px;
             height: 200px;
@@ -61,4 +63,197 @@ $commoncolor:#f90;
             }
         }
     }
+    .details-pics {
+        width: 400px;
+        display: flex;
+        justify-content: space-between;
+        .picul-left {
+            a {
+                display: block;
+                width: 30px;
+                height: 64px;
+                background: url(../../dist/images/indexSprit.png) 0 -21px;
+            }
+        }
+        .picul-right {
+            a {
+                display: block;
+                width: 30px;
+                height: 64px;
+                background: url(../../dist/images/indexSprit.png) -37px -20px;
+            }
+        }
+        .details-picul {
+            width: 340px;
+            overflow: hidden;
+            display: flex;
+            // margin: 0 12px;
+            .picli {
+                margin-right: 5px;
+                background-color: #f90;
+                a {
+                    display: block;
+                    border: 2px solid transparent;
+                    img {
+                        width: 60px;
+                        height: 60px;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    // border: 1px solid red;
+}
+
+.details-midpart {
+    width: 570px;
+    height: 756px;
+    // border: 1px solid purple;
+    position: relative;
+    .details-price {
+        background: url(../images/bg.png) no-repeat center bottom;
+        height: 348px;
+        .price-title {
+            height: 87px;
+            padding: 13px 10px 12px 10px;
+            // border: 1px solid black;
+            color: #222222;
+            word-break: break-all;
+            font-weight: 900;
+            font-size: 16px;
+        }
+        .details-pricetext {
+            display: block;
+            width: 100px;
+            height: 28px;
+            position: absolute;
+            top: 150px;
+            left: 90px;
+            background-color: #eee;
+            text-align: left;
+            font-size: 30px;
+            color: red;
+        }
+    }
+    .location-show {
+        // position: relative;
+        .show-box {
+            display: flex;
+            margin: 9px 0 13px;
+            .location-songzhi {
+                width: 72px;
+                height: 28px;
+                font-size: 12px;
+                color: #999999;
+                line-height: 28px;
+                text-align: center;
+            }
+            .location-choose {
+                position: relative;
+                box-shadow: 0 -1px 1px #ddd;
+                .choosebox {
+                    // border: 1px solid #ccc;
+                    border-bottom: none;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    z-index: 100;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    width: 150px;
+                    height: 26px;
+                    background-color: white;
+                    margin-bottom: -1px;
+                    li {
+                        a {
+                            color: #666;
+                            font-size: 12px;
+                            display: block;
+                            height: 26px;
+                            line-height: 26px;
+                        }
+                    }
+                }
+                .location-hide {
+                    display: none;
+                    width: 420px;
+                    height: 282px;
+                    padding-top: 5px;
+                    border: 1px solid #ccc;
+                    box-shadow: 0 0 6px #dddddd;
+                    z-index: 99;
+                    background-color: white;
+                    margin-top: -1px;
+                    position: absolute;
+                    left: 0;
+                    top: 27px;
+                }
+            }
+        }
+    }
+}
+
+.details-location {
+    @extend %clearfix
+}
+
+.details-rightpart {
+    width: 208px;
+    height: 750px;
+    background: url(../images/bg2.png);
+}
+
+.details-numbox {
+    display: flex;
+    margin: 9px 0 13px;
+    align-items: center;
+    .numsta {
+        width: 72px;
+        height: 28px;
+        font-size: 12px;
+        color: #999999;
+        line-height: 28px;
+        text-align: center;
+    }
+    .details-numchange {
+        // border: 1px solid black;
+        display: flex;
+        align-items: center;
+        a {
+            width: 20px;
+            height: 28px;
+            line-height: 28px;
+            text-align: center;
+            font-size: 18px;
+            color: #999;
+            font-weight: bolder;
+            border: 1px solid #999;
+            background-color: #eeeeee;
+        }
+        .goodsnum {
+            width: 25px;
+            height: 18px;
+            padding: 5px;
+            border: 1px solid #999999;
+            margin: 0 5px;
+            background-color: white;
+            color: #333333;
+            font-size: 16px;
+            line-height: 18px;
+            text-align: center;
+        }
+    }
+}
+
+.details-btn {
+    width: 135px;
+    height: 40px;
+    background-color: #f50;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 3px;
+    margin: 10px 0 0 70px;
 }

@@ -8,9 +8,9 @@
     <meta name="keywords" content="苏宁易购网上商城,苏宁电器,Suning,手机,电脑,冰箱,洗衣机,相机,数码,家居用品,鞋帽,化妆品,母婴用品,图书,食品,正品行货">
     <meta name="description" content="苏宁易购-综合网上购物平台，商品涵盖家电、手机、电脑、超市、母婴、服装、百货、海外购等品类。送货更准时、价格更超值、上新货更快，正品行货、全国联保、可门店自提，全网更低价，让您放心去喜欢">
     <title>
-        <%= htmlWebpackPlugin.options.title %>
+        苏宁首页
     </title>
-    <!-- <link rel="stylesheet" href="../dist/stylesheets/index.css">
+    <!-- <link rel="stylesheet" href="./stylesheets/index.css">
     <link rel="stylesheet" href="./fonts/iconfont.css"> -->
 
 </head>
@@ -177,13 +177,11 @@
                     <img src="http://image4.suning.cn/uimg/cms/img/157855089807736496.gif" alt="">
                 </a>
                 <div class="searchBoxL">
-                    <form action="">
-                        <div class="searchBoxS">
-                            <span class="iconfont icon-weibiaoti-"></span>
-                            <input type="text" placeholder="小罐茶" class="textinput">
-                            <input type="submit" value="搜索" class="searchinput">
-                        </div>
-                    </form>
+                    <div class="searchBoxS">
+                        <span class="iconfont icon-weibiaoti-"></span>
+                        <input type="text" placeholder="小罐茶" class="textinput">
+                        <input type="submit" value="搜索" class="searchinput">
+                    </div>
                     <div class="searchlink">
                         <a href="#">手机</a>
                         <span>|</span>
@@ -2809,9 +2807,83 @@
         <!-- 1230*100 -->
     </div>
 
-    <footer>
+    <footer id="foot">
+        <p>
+            <a href="javascript:;">苏宁互联</a>
+            <span>|</span>
+            <a href="javascript:;">苏宁金融</a>
+            <span>|</span>
+            <a href="javascript:;">苏宁支付</a>
+            <span>|</span>
+            <a href="javascript:;">PP视频</a>
+            <span>|</span>
+            <a href="javascript:;">红孩儿</a>
+            <span>|</span>
+            <a href="javascript:;">苏宁物流</a>
+            <span>|</span>
+            <a href="javascript:;">手机苏宁</a>
+            <span>|</span>
+            <a href="javascript:;">零售云</a>
+            <span>|</span>
+            <a href="javascript:;">苏宁云</a>
+            <span>|</span>
+            <a href="javascript:;">知识产权举报</a>
+            <span>|</span>
+            <a href="javascript:;">投资者关系</a>
+            <span>|</span>
+            <a href="javascript:;">苏宁智能</a>
+        </p>
+        <p>
+            <a href="javascript:;">联系我们</a>
+            <span>|</span>
+            <a href="javascript:;">诚聘英才</a>
+            <span>|</span>
+            <a href="javascript:;">合作招商</a>
+            <span>|</span>
+            <a href="javascript:;">广告平台</a>
+            <span>|</span>
+            <a href="javascript:;">苏宁联盟</a>
+            <span>|</span>
+            <a href="javascript:;">苏宁招标</a>
+            <span>|</span>
+            <a href="javascript:;">友情链接</a>
+            <span>|</span>
+            <a href="javascript:;">隐私政策</a>
+            <span>|</span>
+            <a href="javascript:;">用户体验提升计划</a>
+            <span>|</span>
+            <a href="javascript:;">股东会员认证</a>
+        </p>
+        <p>
+            <a href="#">Copyright© 2002-2020，苏宁易购集团股份有限公司版权所有</a>
+            <span>|</span>
+            <a href="#">苏公网安备 32010202010078号</a>
+            <span>|</span>
+            <a href="#">苏ICP备10207551号-4</a>
+        </p>
+        <p>
+            <a href="#">合字B2-20180025</a>
+            <span>|</span>
+            <a href="#">合字A1.B1.B2-20180017</a>
+            <span>|</span>
+            <a href="#">出版物经营许可证新出发苏批字第A-243号</a>
+            <span>|</span>
+            <a href="#">互联网药品信息服务资格证书（苏）-非经营性-2016-0005</a>
+        </p>
+        <p>
+            <a href="#">经营证照</a>
+            <span>|</span>
+            <a href="#">医疗器械网络交易服务第三方平台备案凭证-（苏）网械平台备字（2018）第00052号</a>
+            <span>|</span>
+            <a href="#">网络文化经营许可证：苏网文〔2018〕10580-203号</a>
+        </p>
+        <p>
+            本网站直接或间接向消费者推销商品或者服务的商业宣传均属于“广告”（包装及参数、售后保障等商品信息除外）
+        </p>
+
     </footer>
-    <script src="../dist/script/bundle.js" defer async="true"></script>
+
+    <script src="../dist/script/bundle.js" defer async="true" page="index" id="current"></script>
 
 </body>
 

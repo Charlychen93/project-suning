@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>苏宁登录界面</title>
-    <link rel="stylesheet" href="./css/login.css">
+    <title>
+        苏宁登录
+    </title>
+    <!-- <link rel="stylesheet" href="./stylesheets/login.css"> -->
 </head>
 
 <body>
 
-    <header>
-        <a href="./index.html">
+    <header class="login-head">
+        <a href="./index.html" class="login-link">
             <img src="http://res.suning.cn/public/v3/images/logo/snlogo.png?v=2015042703" alt="">
         </a>
         <p>
@@ -20,10 +22,10 @@
             <span style="color: red;">《隐私政策</span> 已上线，将更有利于保护您的个人隐私。
         </p>
     </header>
-    <section>
+    <section class="login-content">
         <div>
             <a href="#"></a>
-            <form action="" method="POST">
+            <form action="" method="POST" class="login-form">
                 <p class="formp1">
                     <a href="#">扫码登录</a>
                     <span>|</span>
@@ -57,10 +59,10 @@
         </div>
     </section>
 
-    <footer>
+    <footer class="login-footer">
 
     </footer>
-
+    <script src="../dist/script/bundle.js" defer async="true" page="login" id="current"></script>
 </body>
 
 </html>

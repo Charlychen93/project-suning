@@ -1,0 +1,257 @@
+/* line 11, ../sass/details.scss */
+.details-content:after, .details-location:after {
+  content: '.';
+  display: block;
+  visibility: hidden;
+  overflow: hidden;
+  clear: both;
+}
+
+/* line 22, ../sass/details.scss */
+.details-content {
+  width: 1190px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 30, ../sass/details.scss */
+.details-render {
+  width: 400px;
+}
+/* line 32, ../sass/details.scss */
+.details-render .details-xt {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+/* line 39, ../sass/details.scss */
+.details-render .details-xt .details-xf {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid #aaa;
+  cursor: move;
+  background-color: #fede4f;
+  opacity: 0.5;
+}
+/* line 50, ../sass/details.scss */
+.details-render .details-xt .details-df {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 400px;
+  top: 0;
+  overflow: hidden;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+/* line 59, ../sass/details.scss */
+.details-render .details-xt .details-df .details-dt {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/* line 66, ../sass/details.scss */
+.details-render .details-pics {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+/* line 71, ../sass/details.scss */
+.details-render .details-pics .picul-left a {
+  display: block;
+  width: 30px;
+  height: 64px;
+  background: url(../../dist/images/indexSprit.png) 0 -21px;
+}
+/* line 79, ../sass/details.scss */
+.details-render .details-pics .picul-right a {
+  display: block;
+  width: 30px;
+  height: 64px;
+  background: url(../../dist/images/indexSprit.png) -37px -20px;
+}
+/* line 86, ../sass/details.scss */
+.details-render .details-pics .details-picul {
+  width: 340px;
+  overflow: hidden;
+  display: flex;
+}
+/* line 91, ../sass/details.scss */
+.details-render .details-pics .details-picul .picli {
+  margin-right: 5px;
+  background-color: #f90;
+}
+/* line 94, ../sass/details.scss */
+.details-render .details-pics .details-picul .picli a {
+  display: block;
+  border: 2px solid transparent;
+}
+/* line 97, ../sass/details.scss */
+.details-render .details-pics .details-picul .picli a img {
+  width: 60px;
+  height: 60px;
+  display: block;
+}
+
+/* line 109, ../sass/details.scss */
+.details-midpart {
+  width: 570px;
+  height: 756px;
+  position: relative;
+}
+/* line 114, ../sass/details.scss */
+.details-midpart .details-price {
+  background: url(../images/bg.png) no-repeat center bottom;
+  height: 348px;
+}
+/* line 117, ../sass/details.scss */
+.details-midpart .details-price .price-title {
+  height: 87px;
+  padding: 13px 10px 12px 10px;
+  color: #222222;
+  word-break: break-all;
+  font-weight: 900;
+  font-size: 16px;
+}
+/* line 126, ../sass/details.scss */
+.details-midpart .details-price .details-pricetext {
+  display: block;
+  width: 100px;
+  height: 28px;
+  position: absolute;
+  top: 150px;
+  left: 90px;
+  background-color: #eee;
+  text-align: left;
+  font-size: 30px;
+  color: red;
+}
+/* line 141, ../sass/details.scss */
+.details-midpart .location-show .show-box {
+  display: flex;
+  margin: 9px 0 13px;
+}
+/* line 144, ../sass/details.scss */
+.details-midpart .location-show .show-box .location-songzhi {
+  width: 72px;
+  height: 28px;
+  font-size: 12px;
+  color: #999999;
+  line-height: 28px;
+  text-align: center;
+}
+/* line 152, ../sass/details.scss */
+.details-midpart .location-show .show-box .location-choose {
+  position: relative;
+  box-shadow: 0 -1px 1px #ddd;
+}
+/* line 155, ../sass/details.scss */
+.details-midpart .location-show .show-box .location-choose .choosebox {
+  border-bottom: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 150px;
+  height: 26px;
+  background-color: white;
+  margin-bottom: -1px;
+}
+/* line 170, ../sass/details.scss */
+.details-midpart .location-show .show-box .location-choose .choosebox li a {
+  color: #666;
+  font-size: 12px;
+  display: block;
+  height: 26px;
+  line-height: 26px;
+}
+/* line 179, ../sass/details.scss */
+.details-midpart .location-show .show-box .location-choose .location-hide {
+  display: none;
+  width: 420px;
+  height: 282px;
+  padding-top: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 6px #dddddd;
+  z-index: 99;
+  background-color: white;
+  margin-top: -1px;
+  position: absolute;
+  left: 0;
+  top: 27px;
+}
+
+/* line 202, ../sass/details.scss */
+.details-rightpart {
+  width: 208px;
+  height: 750px;
+  background: url(../images/bg2.png);
+}
+
+/* line 208, ../sass/details.scss */
+.details-numbox {
+  display: flex;
+  margin: 9px 0 13px;
+  align-items: center;
+}
+/* line 212, ../sass/details.scss */
+.details-numbox .numsta {
+  width: 72px;
+  height: 28px;
+  font-size: 12px;
+  color: #999999;
+  line-height: 28px;
+  text-align: center;
+}
+/* line 220, ../sass/details.scss */
+.details-numbox .details-numchange {
+  display: flex;
+  align-items: center;
+}
+/* line 224, ../sass/details.scss */
+.details-numbox .details-numchange a {
+  width: 20px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  font-size: 18px;
+  color: #999;
+  font-weight: bolder;
+  border: 1px solid #999;
+  background-color: #eeeeee;
+}
+/* line 235, ../sass/details.scss */
+.details-numbox .details-numchange .goodsnum {
+  width: 25px;
+  height: 18px;
+  padding: 5px;
+  border: 1px solid #999999;
+  margin: 0 5px;
+  background-color: white;
+  color: #333333;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+}
+
+/* line 250, ../sass/details.scss */
+.details-btn {
+  width: 135px;
+  height: 40px;
+  background-color: #f50;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 3px;
+  margin: 10px 0 0 70px;
+}

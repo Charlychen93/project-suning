@@ -2139,3 +2139,31 @@ nav .navBox .publicity img {
   transform: translateX(-50%);
   z-index: 100;
 }
+
+/* line 12, ../sass/_footer.scss */
+#foot {
+  height: 200px;
+  padding-top: 15px;
+  background-color: #ffffff;
+  margin-bottom: 120px;
+}
+/* line 17, ../sass/_footer.scss */
+#foot p {
+  width: 1190px;
+  margin: 0 auto;
+  height: 25px;
+  line-height: 25px;
+  font-size: 12px;
+  text-align: center;
+  color: #999;
+}
+/* line 25, ../sass/_footer.scss */
+#foot p a {
+  color: #666;
+}
+/* line 28, ../sass/_footer.scss */
+#foot p span {
+  display: inline-block;
+  margin: 0 8px;
+  color: #999999;
+}

@@ -9,14 +9,14 @@
 // }
 $innerwidth1:970px;
 $commoncolor:#f90;
-header {
+.login-head {
     width: $innerwidth1;
     margin: 0 auto;
     height: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    a {
+    .login-link {
         img {
             width: 189px;
             height: 100px;
@@ -32,7 +32,7 @@ header {
     }
 }
 
-section {
+.login-content {
     width: 100%;
     background: url(https://image.suning.cn/uimg/cms/img/157900454746023629.jpg) no-repeat center;
     div {
@@ -53,7 +53,7 @@ section {
     }
 }
 
-form {
+.login-form {
     overflow: hidden;
     height: 400px;
     border-radius: 4px;

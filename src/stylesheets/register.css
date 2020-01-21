@@ -1,0 +1,123 @@
+/* line 11, ../sass/register.scss */
+.register-head {
+  width: 990px;
+  height: 88px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+/* line 18, ../sass/register.scss */
+.register-head .logo img {
+  display: block;
+  width: 190px;
+  height: 88px;
+}
+/* line 24, ../sass/register.scss */
+.register-head .tologin {
+  height: 18px;
+  font-size: 12px;
+  margin-top: 63px;
+  color: #333;
+}
+
+/* line 32, ../sass/register.scss */
+.register-content {
+  width: 990px;
+  margin: 0 auto;
+  padding: 55px 0;
+  border: 1px solid #ddd;
+  border-top: 3px solid #ff9900;
+}
+/* line 39, ../sass/register.scss */
+.register-content p {
+  width: 378px;
+  height: 38px;
+  border: 1px solid #ccc;
+  line-height: 38px;
+  margin: 0 auto 25px;
+  display: flex;
+  position: relative;
+}
+/* line 47, ../sass/register.scss */
+.register-content p em {
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  height: 22px;
+  font-size: 12px;
+  line-height: 22px;
+}
+/* line 54, ../sass/register.scss */
+.register-content p em i {
+  display: flex;
+  height: 22px;
+  font-size: 12px;
+  line-height: 22px;
+  align-items: center;
+}
+/* line 60, ../sass/register.scss */
+.register-content p em i b {
+  margin: 0 2px;
+}
+/* line 66, ../sass/register.scss */
+.register-content .password {
+  margin-bottom: 60px;
+}
+/* line 69, ../sass/register.scss */
+.register-content .btn {
+  width: 378px;
+  height: 38px;
+  border: 1px solid #ccc;
+  display: block;
+  line-height: 38px;
+  margin: 0 auto 25px;
+  outline: none;
+  background-color: #ff9900;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+/* line 82, ../sass/register.scss */
+.register-content label {
+  width: 87px;
+  display: inline-block;
+  height: 100%;
+  line-height: 38px;
+  font-size: 12px;
+  color: #222;
+  text-align: right;
+}
+/* line 91, ../sass/register.scss */
+.register-content .user,
+.register-content .pass {
+  width: 291px;
+  height: 100%;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+/* line 99, ../sass/register.scss */
+.register-content .testnum {
+  display: flex;
+  position: relative;
+}
+/* line 102, ../sass/register.scss */
+.register-content .testnum .test {
+  width: 142px;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+/* line 108, ../sass/register.scss */
+.register-content .testnum span {
+  width: 150px;
+  height: 38px;
+  position: absolute;
+  right: -1px;
+  top: -1px;
+  border: 1px solid #ccc;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bolder;
+  letter-spacing: 10px;
+}
