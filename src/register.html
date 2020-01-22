@@ -21,34 +21,35 @@
     </header>
 
     <section class="register-content">
-        <p class="username"><label for="">账&emsp;号：</label>
-            <input type="text" placeholder="请输入账号" class="user">
-            <em></em>
-        </p>
+        <form action="http://localhost/project-suning/php/registerinsert.php" method="POST">
+            <p class="username"><label for="">账&emsp;号：</label>
+                <input type="text" placeholder="请输入账号" class="user" name="user">
+                <em class="username-tishi"></em>
+            </p>
 
-        <p class="testnum">
-            <label for="">验证码：</label>
-            <input type="text" placeholder="请输入验证码" class="test">
+            <p class="testnum">
+                <label for="">验证码：</label>
+                <input type="text" placeholder="请输入验证码" class="test">
 
-            <span>1234</span>
-            <em></em>
-        </p>
+                <span class="randomTestNum"></span>
+                <em class="test-tishi"></em>
+            </p>
 
-        <p class="password">
-            <label for="">密&emsp;码：</label>
-            <input type="password" placeholder="请输入密码" class="pass">
-            <em>
-                <i></i>
-                <i>密码强度：
-                    <b></b>
-                    <b></b>
-                    <b></b>
+            <p class="password">
+                <label for="">密&emsp;码：</label>
+                <input type="password" placeholder="请输入密码" class="pass" name="password">
+                <em class="pass-info">
+                <i class="pass-tishi"></i>
+                <i class="pass-strong" style="display: none;">密码强度：
+                    <b class="strong1" style="border: 1px solid #666;display:inline-block;width: 10px;height: 5px;"></b>
+                    <b class="strong2" style="border: 1px solid #666;display:inline-block;width: 10px;height: 5px;"></b>
+                    <b class="strong3" style="border: 1px solid #666;display:inline-block;width: 10px;height: 5px;"></b>
                 </i>
             </em>
-        </p>
+            </p>
 
-        <button class="btn">提交注册</button>
-
+            <input type="submit" class="register-btn" name="submit">
+        </form>
     </section>
     <footer class="register-footer">
 

@@ -45,8 +45,9 @@ $commoncolor:#f90;
             width: 570px;
             height: 570px;
         }
-        form {
+        .login-form {
             width: 360px;
+            display: block;
             background-color: #fff;
             margin-top: 50px;
         }

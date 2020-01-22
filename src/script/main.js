@@ -3,7 +3,7 @@ import "../stylesheets/index.css";
 import "../stylesheets/login.css";
 import "../stylesheets/register.css";
 import "../stylesheets/cartlist.css";
-// import "../stylesheets/details.css";
+import "../stylesheets/details.css";
 import "../fonts/iconfont.css";
 
 import { indexjs } from "./index.js";
